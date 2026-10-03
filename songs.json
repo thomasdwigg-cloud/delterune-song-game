@@ -1,0 +1,2055 @@
+{
+"source": "Previews and track info from Apple Music; popularity is Last.fm listener count (collected 2026-10-01)",
+"songs": [
+{
+"key": "anotherhim",
+"title": "ANOTHER HIM",
+"chapter": "Chapter 1",
+"track": 1,
+"duration": 48.0,
+"listeners": 58420,
+"src": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/21/80/84/21808493-df50-33cb-9e67-c6d176be267c/mzaf_6545634854555916362.plus.aac.p.m4a",
+"url": "https://music.apple.com/us/album/another-him/1443475587?i=1443475588"
+},
+{
+"key": "beginning",
+"title": "Beginning",
+"chapter": "Chapter 1",
+"track": 2,
+"duration": 57.4,
+"listeners": 57146,
+"src": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/01/88/1a/01881a35-9e7d-376c-8cfd-f70173965bae/mzaf_10922887090031954314.plus.aac.p.m4a",
+"url": "https://music.apple.com/us/album/beginning/1443475587?i=1443475590"
+},
+{
+"key": "school",
+"title": "School",
+"chapter": "Chapter 1",
+"track": 3,
+"duration": 80.0,
+"listeners": 54503,
+"src": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/b9/10/e7/b910e793-6401-8168-db01-910e4fd14825/mzaf_12294471789645297956.plus.aac.p.m4a",
+"url": "https://music.apple.com/us/album/school/1443475587?i=1443475591"
+},
+{
+"key": "susie",
+"title": "Susie",
+"chapter": "Chapter 1",
+"track": 4,
+"duration": 27.4,
+"listeners": 2574,
+"src": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/c9/d9/26/c9d9266c-e629-e00d-5eac-daf960971d3d/mzaf_8875575749283963323.plus.aac.p.m4a",
+"url": "https://music.apple.com/us/album/susie/1443475587?i=1443475593"
+},
+{
+"key": "thedoor",
+"title": "The Door",
+"chapter": "Chapter 1",
+"track": 5,
+"duration": 41.7,
+"listeners": 44187,
+"src": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/af/2c/fd/af2cfdb2-fbc6-2554-50b7-9bf3d1595dad/mzaf_14811477218726718375.plus.aac.p.m4a",
+"url": "https://music.apple.com/us/album/the-door/1443475587?i=1443475594"
+},
+{
+"key": "cliffs",
+"title": "Cliffs",
+"chapter": "Chapter 1",
+"track": 6,
+"duration": 35.1,
+"listeners": 40717,
+"src": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/e1/d0/88/e1d0881f-6a26-4763-7d07-13311dba19ba/mzaf_10647716873856217489.plus.aac.p.m4a",
+"url": "https://music.apple.com/us/album/cliffs/1443475587?i=1443475595"
+},
+{
+"key": "thechase",
+"title": "The Chase",
+"chapter": "Chapter 1",
+"track": 7,
+"duration": 33.9,
+"listeners": 45890,
+"src": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/5a/84/92/5a849224-2116-75c5-720e-b8722582d6aa/mzaf_2649244074416751085.plus.aac.p.m4a",
+"url": "https://music.apple.com/us/album/the-chase/1443475587?i=1443475597"
+},
+{
+"key": "thelegend",
+"title": "The Legend",
+"chapter": "Chapter 1",
+"track": 8,
+"duration": 111.3,
+"listeners": 70223,
+"src": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/68/12/96/681296ab-c15e-b908-896b-07ba500688b2/mzaf_9177293280621931133.plus.aac.p.m4a",
+"url": "https://music.apple.com/us/album/the-legend/1443475587?i=1443475599"
+},
+{
+"key": "lancer",
+"title": "Lancer",
+"chapter": "Chapter 1",
+"track": 9,
+"duration": 48.0,
+"listeners": 91347,
+"src": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/89/2d/b0/892db0a5-2892-1a2c-60f0-51946a06d7a4/mzaf_11170557779763032941.plus.aac.p.m4a",
+"url": "https://music.apple.com/us/album/lancer/1443475587?i=1443475600"
+},
+{
+"key": "rudebuster",
+"title": "Rude Buster",
+"chapter": "Chapter 1",
+"track": 10,
+"duration": 75.4,
+"listeners": 204849,
+"src": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/04/b9/aa/04b9aab4-b4ed-9273-3e23-1e7ceb7c58f4/mzaf_11606772680385671506.plus.aac.p.m4a",
+"url": "https://music.apple.com/us/album/rude-buster/1443475587?i=1443475721"
+},
+{
+"key": "emptytown",
+"title": "Empty Town",
+"chapter": "Chapter 1",
+"track": 11,
+"duration": 83.5,
+"listeners": 72400,
+"src": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/dd/54/eb/dd54ebbd-558f-c2a1-bb40-28a446d2964e/mzaf_4442793976840803335.plus.aac.p.m4a",
+"url": "https://music.apple.com/us/album/empty-town/1443475587?i=1443475722"
+},
+{
+"key": "weirdbirds",
+"title": "Weird Birds",
+"chapter": "Chapter 1",
+"track": 12,
+"duration": 16.6,
+"listeners": 1687,
+"src": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/82/f3/85/82f38541-190b-2c30-da19-387710dd6a8c/mzaf_2257936355076340254.plus.aac.p.m4a",
+"url": "https://music.apple.com/us/album/weird-birds/1443475587?i=1443475723"
+},
+{
+"key": "fieldofhopesanddreams",
+"title": "Field of Hopes and Dreams",
+"chapter": "Chapter 1",
+"track": 13,
+"duration": 161.3,
+"listeners": 151041,
+"src": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/d2/e5/06/d2e50648-d3b8-0030-e8c0-fd95cb067df6/mzaf_98445197364509477.plus.aac.p.m4a",
+"url": "https://music.apple.com/us/album/field-of-hopes-and-dreams/1443475587?i=1443475725"
+},
+{
+"key": "fanfarefromroseofwinter",
+"title": "Fanfare (from Rose of Winter)",
+"chapter": "Chapter 1",
+"track": 14,
+"duration": 15.6,
+"listeners": 1332,
+"src": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/ca/ed/ab/caedab9c-a558-02e3-61ab-11e569e8e7c2/mzaf_8876961864877112967.plus.aac.p.m4a",
+"url": "https://music.apple.com/us/album/fanfare-from-rose-of-winter/1443475587?i=1443475726"
+},
+{
+"key": "lantern",
+"title": "Lantern",
+"chapter": "Chapter 1",
+"track": 15,
+"duration": 68.8,
+"listeners": 61898,
+"src": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/6d/2b/ea/6d2bea57-c0f3-e5f5-1bd5-3093a33c9095/mzaf_14496715912623877948.plus.aac.p.m4a",
+"url": "https://music.apple.com/us/album/lantern/1443475587?i=1443475727"
+},
+{
+"key": "imverybad",
+"title": "I'm Very Bad",
+"chapter": "Chapter 1",
+"track": 16,
+"duration": 13.7,
+"listeners": 1692,
+"src": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/6f/a7/80/6fa7802f-5d85-14b8-4a91-7916e42b1d04/mzaf_16767415711958161181.plus.aac.p.m4a",
+"url": "https://music.apple.com/us/album/im-very-bad/1443475587?i=1443475728"
+},
+{
+"key": "checkerdance",
+"title": "Checker Dance",
+"chapter": "Chapter 1",
+"track": 17,
+"duration": 78.0,
+"listeners": 81575,
+"src": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/29/f5/82/29f58293-1db6-15e3-c201-c4420343038d/mzaf_6720076100389121475.plus.aac.p.m4a",
+"url": "https://music.apple.com/us/album/checker-dance/1443475587?i=1443475729"
+},
+{
+"key": "quietautumn",
+"title": "Quiet Autumn",
+"chapter": "Chapter 1",
+"track": 18,
+"duration": 49.8,
+"listeners": 62371,
+"src": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/b4/63/db/b463dba4-11b7-25b7-7114-8d891ecf8724/mzaf_16952069784580710859.plus.aac.p.m4a",
+"url": "https://music.apple.com/us/album/quiet-autumn/1443475587?i=1443475730"
+},
+{
+"key": "scarletforest",
+"title": "Scarlet Forest",
+"chapter": "Chapter 1",
+"track": 19,
+"duration": 128.0,
+"listeners": 87317,
+"src": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/a2/52/88/a25288fc-ca30-d0ee-3f1d-a4dde966a9c1/mzaf_229899219933521206.plus.aac.p.m4a",
+"url": "https://music.apple.com/us/album/scarlet-forest/1443475587?i=1443475731"
+},
+{
+"key": "thrashmachine",
+"title": "Thrash Machine",
+"chapter": "Chapter 1",
+"track": 20,
+"duration": 54.9,
+"listeners": 47825,
+"src": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/7b/04/9c/7b049c44-337b-2a82-a68b-a345edeb4a78/mzaf_6147094164581035504.plus.aac.p.m4a",
+"url": "https://music.apple.com/us/album/thrash-machine/1443475587?i=1443475732"
+},
+{
+"key": "vslancer",
+"title": "Vs. Lancer",
+"chapter": "Chapter 1",
+"track": 21,
+"duration": 42.4,
+"listeners": 73317,
+"src": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/82/29/f6/8229f6c8-60c1-a1f2-0a7c-a2e6be37cef3/mzaf_16461033082325368426.plus.aac.p.m4a",
+"url": "https://music.apple.com/us/album/vs-lancer/1443475587?i=1443475733"
+},
+{
+"key": "basement",
+"title": "Basement",
+"chapter": "Chapter 1",
+"track": 22,
+"duration": 27.9,
+"listeners": 1555,
+"src": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/fb/46/d2/fb46d231-d72c-9854-87d8-01901a97dce5/mzaf_14847974282060757842.plus.aac.p.m4a",
+"url": "https://music.apple.com/us/album/basement/1443475587?i=1443475735"
+},
+{
+"key": "imminentdeath",
+"title": "Imminent Death",
+"chapter": "Chapter 1",
+"track": 23,
+"duration": 20.0,
+"listeners": 1587,
+"src": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/51/40/b3/5140b3e6-1368-1708-42a2-69398ccabe82/mzaf_3860612447974862224.plus.aac.p.m4a",
+"url": "https://music.apple.com/us/album/imminent-death/1443475587?i=1443475736"
+},
+{
+"key": "vssusie",
+"title": "Vs. Susie",
+"chapter": "Chapter 1",
+"track": 24,
+"duration": 81.1,
+"listeners": 91853,
+"src": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/bf/56/e8/bf56e863-d31d-db1a-1161-32e405f3831b/mzaf_13932496341906973102.plus.aac.p.m4a",
+"url": "https://music.apple.com/us/album/vs-susie/1443475587?i=1443475737"
+},
+{
+"key": "cardcastle",
+"title": "Card Castle",
+"chapter": "Chapter 1",
+"track": 25,
+"duration": 61.4,
+"listeners": 46199,
+"src": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/8b/8a/8f/8b8a8f89-6c74-6b42-6824-458ccb6361ba/mzaf_1126319471855644238.plus.aac.p.m4a",
+"url": "https://music.apple.com/us/album/card-castle/1443475587?i=1443475738"
+},
+{
+"key": "rouxlskaard",
+"title": "Rouxls Kaard",
+"chapter": "Chapter 1",
+"track": 26,
+"duration": 19.0,
+"listeners": 1841,
+"src": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/37/f7/aa/37f7aa64-f97e-53c1-c8d2-bffd89466ad9/mzaf_7785213031367997357.plus.aac.p.m4a",
+"url": "https://music.apple.com/us/album/rouxls-kaard/1443475587?i=1443475739"
+},
+{
+"key": "april2012",
+"title": "April 2012",
+"chapter": "Chapter 1",
+"track": 27,
+"duration": 20.6,
+"listeners": 1812,
+"src": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/58/c0/3c/58c03cc8-88b2-a519-2099-af30e53ca8b6/mzaf_16614447446154276234.plus.aac.p.m4a",
+"url": "https://music.apple.com/us/album/april-2012/1443475587?i=1443475740"
+},
+{
+"key": "hipshop",
+"title": "Hip Shop",
+"chapter": "Chapter 1",
+"track": 28,
+"duration": 39.6,
+"listeners": 104327,
+"src": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/59/1f/88/591f887d-f771-af2e-4433-97abbef25f61/mzaf_1517138990970636036.plus.aac.p.m4a",
+"url": "https://music.apple.com/us/album/hip-shop/1443475587?i=1443475741"
+},
+{
+"key": "gallery",
+"title": "Gallery",
+"chapter": "Chapter 1",
+"track": 29,
+"duration": 12.8,
+"listeners": 1816,
+"src": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/bb/68/f2/bb68f2f7-148d-f45c-b8e2-2aee82dd3320/mzaf_9745091971344126424.plus.aac.p.m4a",
+"url": "https://music.apple.com/us/album/gallery/1443475587?i=1443475742"
+},
+{
+"key": "chaosking",
+"title": "Chaos King",
+"chapter": "Chapter 1",
+"track": 30,
+"duration": 106.1,
+"listeners": 94457,
+"src": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/eb/d6/8a/ebd68a86-344c-d099-8571-fe89f39dbcc1/mzaf_12001964750930986635.plus.aac.p.m4a",
+"url": "https://music.apple.com/us/album/chaos-king/1443475587?i=1443475743"
+},
+{
+"key": "darknessfalls",
+"title": "Darkness Falls",
+"chapter": "Chapter 1",
+"track": 31,
+"duration": 67.0,
+"listeners": 63229,
+"src": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/32/12/5c/32125c9f-57be-1d07-3888-88d97aa59fe9/mzaf_10989241690780369082.plus.aac.p.m4a",
+"url": "https://music.apple.com/us/album/darkness-falls/1443475587?i=1443475745"
+},
+{
+"key": "thecircus",
+"title": "The Circus",
+"chapter": "Chapter 1",
+"track": 32,
+"duration": 51.4,
+"listeners": 54137,
+"src": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/5e/7c/63/5e7c63fb-cd41-5802-652b-26e5d337010b/mzaf_12124377406830279799.plus.aac.p.m4a",
+"url": "https://music.apple.com/us/album/the-circus/1443475587?i=1443475746"
+},
+{
+"key": "theworldrevolving",
+"title": "THE WORLD REVOLVING",
+"chapter": "Chapter 1",
+"track": 33,
+"duration": 101.1,
+"listeners": 190798,
+"src": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/d5/8e/ac/d58eacc6-7259-73ab-7f1d-c74e233073b9/mzaf_17466976344897223470.plus.aac.p.m4a",
+"url": "https://music.apple.com/us/album/the-world-revolving/1443475587?i=1443475747"
+},
+{
+"key": "friendship",
+"title": "Friendship",
+"chapter": "Chapter 1",
+"track": 34,
+"duration": 160.5,
+"listeners": 60055,
+"src": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/62/87/d4/6287d417-92c6-1f7a-6853-4e83a75ee571/mzaf_13930320163013732116.plus.aac.p.m4a",
+"url": "https://music.apple.com/us/album/friendship/1443475587?i=1443475748"
+},
+{
+"key": "theholy",
+"title": "THE HOLY",
+"chapter": "Chapter 1",
+"track": 35,
+"duration": 48.0,
+"listeners": 47330,
+"src": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/3a/fc/a6/3afca65d-52ef-6c75-243c-2cf708ced256/mzaf_2236260477454899311.plus.aac.p.m4a",
+"url": "https://music.apple.com/us/album/the-holy/1443475587?i=1443475749"
+},
+{
+"key": "yourpower",
+"title": "Your Power",
+"chapter": "Chapter 1",
+"track": 36,
+"duration": 13.2,
+"listeners": 1642,
+"src": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/e4/8c/fb/e48cfb90-dda5-a36b-613e-375cd43d5e9b/mzaf_14935760222974479241.plus.aac.p.m4a",
+"url": "https://music.apple.com/us/album/your-power/1443475587?i=1443475750"
+},
+{
+"key": "atowncalledhometown",
+"title": "A Town Called Hometown",
+"chapter": "Chapter 1",
+"track": 37,
+"duration": 113.1,
+"listeners": 68517,
+"src": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/f9/ce/93/f9ce930b-d36f-3db6-9b21-16da050d7a2e/mzaf_4122575664955416638.plus.aac.p.m4a",
+"url": "https://music.apple.com/us/album/a-town-called-hometown/1443475587?i=1443475751"
+},
+{
+"key": "youcanalwayscomehome",
+"title": "You Can Always Come Home",
+"chapter": "Chapter 1",
+"track": 38,
+"duration": 100.8,
+"listeners": 103534,
+"src": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/ab/2f/8c/ab2f8c59-1ea5-8253-a8ba-1889af419770/mzaf_12106205684364021730.plus.aac.p.m4a",
+"url": "https://music.apple.com/us/album/you-can-always-come-home/1443475587?i=1443475752"
+},
+{
+"key": "dontforget",
+"title": "Don't Forget",
+"chapter": "Chapter 1",
+"track": 39,
+"duration": 51.4,
+"listeners": 90074,
+"src": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/cf/d4/35/cfd435e8-4430-2698-36d7-6b6efec5925a/mzaf_18290602724768381439.plus.aac.p.m4a",
+"url": "https://music.apple.com/us/album/dont-forget-feat-laura-shigihara/1443475587?i=1443475754"
+},
+{
+"key": "beforethestory",
+"title": "Before the Story",
+"chapter": "Chapter 1",
+"track": 40,
+"duration": 88.6,
+"listeners": 89706,
+"src": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/2c/72/0d/2c720dae-88e9-88cc-e3d4-65c801a00a5a/mzaf_2013495938018891456.plus.aac.p.m4a",
+"url": "https://music.apple.com/us/album/before-the-story/1443475587?i=1443475756"
+},
+{
+"key": "faintglow",
+"title": "Faint Glow",
+"chapter": "Chapter 2",
+"track": 1,
+"duration": 77.3,
+"listeners": 61619,
+"src": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/e7/a0/2e/e7a02efe-56c3-273e-7184-d66dfa5f6306/mzaf_11917426217379424469.plus.aac.p.m4a",
+"url": "https://music.apple.com/us/album/faint-glow/1586414623?i=1586414624"
+},
+{
+"key": "girlnextdoor",
+"title": "Girl Next Door",
+"chapter": "Chapter 2",
+"track": 2,
+"duration": 54.7,
+"listeners": 60343,
+"src": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/6a/0a/2b/6a0a2b68-6250-a359-08e6-6c7fa68a8c42/mzaf_13606430551862939178.plus.aac.p.m4a",
+"url": "https://music.apple.com/us/album/girl-next-door/1586414623?i=1586414625"
+},
+{
+"key": "mycastletown",
+"title": "My Castle Town",
+"chapter": "Chapter 2",
+"track": 3,
+"duration": 127.6,
+"listeners": 169690,
+"src": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/51/56/63/515663fb-c421-a92e-5de9-dc5b0f2df4fc/mzaf_3068022827612162753.plus.aac.p.m4a",
+"url": "https://music.apple.com/us/album/my-castle-town/1586414623?i=1586414626"
+},
+{
+"key": "ohhhhohohoho",
+"title": "Ohhhhohohoho!",
+"chapter": "Chapter 2",
+"track": 4,
+"duration": 9.5,
+"listeners": 1310,
+"src": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/a1/a9/46/a1a946cb-eacb-bd00-55f6-f15f4d04086d/mzaf_4898896130468340472.plus.aac.p.m4a",
+"url": "https://music.apple.com/us/album/ohhhhohohoho/1586414623?i=1586414627"
+},
+{
+"key": "queen",
+"title": "Queen",
+"chapter": "Chapter 2",
+"track": 5,
+"duration": 56.8,
+"listeners": 66128,
+"src": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/89/0c/53/890c530c-7f5e-b956-d1e0-ef8d8ce5959b/mzaf_15220917775788094845.plus.aac.p.m4a",
+"url": "https://music.apple.com/us/album/queen/1586414623?i=1586414628"
+},
+{
+"key": "acybersworld",
+"title": "A CYBER'S WORLD?",
+"chapter": "Chapter 2",
+"track": 6,
+"duration": 166.2,
+"listeners": 121334,
+"src": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/58/37/aa/5837aa2e-3081-6c5e-dd5d-51ac3c7b35a8/mzaf_10187142810437382390.plus.aac.p.m4a",
+"url": "https://music.apple.com/us/album/a-cybers-world/1586414623?i=1586414629"
+},
+{
+"key": "asimplediversion",
+"title": "A Simple Diversion",
+"chapter": "Chapter 2",
+"track": 7,
+"duration": 31.3,
+"listeners": 51046,
+"src": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/26/54/55/26545552-8f0c-3361-9614-20d846253b4b/mzaf_12667936496529098643.plus.aac.p.m4a",
+"url": "https://music.apple.com/us/album/a-simple-diversion/1586414623?i=1586414630"
+},
+{
+"key": "almosttotheguys",
+"title": "Almost To The Guys!",
+"chapter": "Chapter 2",
+"track": 8,
+"duration": 17.9,
+"listeners": 1573,
+"src": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/3c/76/8e/3c768e59-23d0-c69f-0291-b2c27ada887e/mzaf_9567006350153100475.plus.aac.p.m4a",
+"url": "https://music.apple.com/us/album/almost-to-the-guys/1586414623?i=1586414631"
+},
+{
+"key": "coolbeat",
+"title": "Cool Beat",
+"chapter": "Chapter 2",
+"track": 9,
+"duration": 17.5,
+"listeners": 1517,
+"src": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/a7/80/7c/a7807c88-0e43-cf32-3e80-d402cab86131/mzaf_17442411092203711318.plus.aac.p.m4a",
+"url": "https://music.apple.com/us/album/cool-beat/1586414623?i=1586414632"
+},
+{
+"key": "whenigetmadidancelikethis",
+"title": "When I Get Mad I Dance Like This",
+"chapter": "Chapter 2",
+"track": 10,
+"duration": 10.7,
+"listeners": 1685,
+"src": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/fb/f9/d6/fbf9d679-7bd4-4817-7180-df74757314e7/mzaf_5137091994825706775.plus.aac.p.m4a",
+"url": "https://music.apple.com/us/album/when-i-get-mad-i-dance-like-this/1586414623?i=1586414633"
+},
+{
+"key": "cyberbattlesolo",
+"title": "Cyber Battle (Solo)",
+"chapter": "Chapter 2",
+"track": 11,
+"duration": 107.5,
+"listeners": 54922,
+"src": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/a8/a1/e3/a8a1e3a0-75dc-23e7-9f38-239f46ee695d/mzaf_8005691039742538858.plus.aac.p.m4a",
+"url": "https://music.apple.com/us/album/cyber-battle-solo-feat-lena-raine/1586414623?i=1586414634"
+},
+{
+"key": "whenigethappyidancelikethis",
+"title": "When I Get Happy I Dance Like This",
+"chapter": "Chapter 2",
+"track": 12,
+"duration": 19.2,
+"listeners": 1578,
+"src": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/7e/53/ef/7e53ef7f-7e8f-3d73-27d4-da0ddb02ccfc/mzaf_10860046905875301441.plus.aac.p.m4a",
+"url": "https://music.apple.com/us/album/when-i-get-happy-i-dance-like-this/1586414623?i=1586414635"
+},
+{
+"key": "soundstudio",
+"title": "Sound Studio",
+"chapter": "Chapter 2",
+"track": 13,
+"duration": 68.9,
+"listeners": 44730,
+"src": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/82/f9/4c/82f94c05-c4b1-9094-ef07-aad7d702df3d/mzaf_9243711179493359663.plus.aac.p.m4a",
+"url": "https://music.apple.com/us/album/sound-studio/1586414623?i=1586414636"
+},
+{
+"key": "berdly",
+"title": "Berdly",
+"chapter": "Chapter 2",
+"track": 14,
+"duration": 46.0,
+"listeners": 57637,
+"src": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/fc/8d/e3/fc8de3ae-76b3-9c02-a76c-3b04e6eaf2bb/mzaf_16636974355669111183.plus.aac.p.m4a",
+"url": "https://music.apple.com/us/album/berdly/1586414623?i=1586414637"
+},
+{
+"key": "smartrace",
+"title": "Smart Race",
+"chapter": "Chapter 2",
+"track": 15,
+"duration": 66.1,
+"listeners": 78484,
+"src": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/93/55/75/935575f5-d2a8-e7b8-acd7-13c3aa7b33aa/mzaf_7717186712094986269.plus.aac.p.m4a",
+"url": "https://music.apple.com/us/album/smart-race/1586414623?i=1586414638"
+},
+{
+"key": "faintcouragegameover",
+"title": "Faint Courage (Game Over)",
+"chapter": "Chapter 2",
+"track": 16,
+"duration": 52.0,
+"listeners": 46776,
+"src": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/a9/24/ab/a924ab66-7ec6-caa6-e774-5e538ee107aa/mzaf_1844781544082048157.plus.aac.p.m4a",
+"url": "https://music.apple.com/us/album/faint-courage-game-over/1586414623?i=1586414639"
+},
+{
+"key": "welcometothecity",
+"title": "WELCOME TO THE CITY",
+"chapter": "Chapter 2",
+"track": 17,
+"duration": 114.0,
+"listeners": 62951,
+"src": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/d9/3e/fb/d93efb21-e35f-5180-8ffa-0c421f177452/mzaf_10271529028039750861.plus.aac.p.m4a",
+"url": "https://music.apple.com/us/album/welcome-to-the-city/1586414623?i=1586414640"
+},
+{
+"key": "ministudio",
+"title": "Mini Studio",
+"chapter": "Chapter 2",
+"track": 18,
+"duration": 51.7,
+"listeners": 40277,
+"src": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/55/61/4b/55614b62-4a65-f638-0987-6f6ccd9585dd/mzaf_12269746786301375570.plus.aac.p.m4a",
+"url": "https://music.apple.com/us/album/mini-studio/1586414623?i=1586414641"
+},
+{
+"key": "holidaystudio",
+"title": "Holiday Studio",
+"chapter": "Chapter 2",
+"track": 19,
+"duration": 68.9,
+"listeners": 38014,
+"src": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/21/b3/a9/21b3a97f-c996-0816-08bc-afc227d5fbb4/mzaf_2300581669867251858.plus.aac.p.m4a",
+"url": "https://music.apple.com/us/album/holiday-studio/1586414623?i=1586414642"
+},
+{
+"key": "coolmixtape",
+"title": "Cool Mixtape",
+"chapter": "Chapter 2",
+"track": 20,
+"duration": 26.7,
+"listeners": 1512,
+"src": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/e0/93/54/e093545a-53f3-41e2-b03a-9ad7b4d14eff/mzaf_6869300287404543010.plus.aac.p.m4a",
+"url": "https://music.apple.com/us/album/cool-mixtape/1586414623?i=1586414643"
+},
+{
+"key": "heyevery",
+"title": "HEY EVERY    !",
+"chapter": "Chapter 2",
+"track": 21,
+"duration": 18.9,
+"listeners": 943,
+"src": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/17/07/d3/1707d30c-61a3-57fa-9ff3-dcf29e4c04df/mzaf_5041330253623086468.plus.aac.p.m4a",
+"url": "https://music.apple.com/us/album/hey-every/1586414623?i=1586414644"
+},
+{
+"key": "spamton",
+"title": "Spamton",
+"chapter": "Chapter 2",
+"track": 22,
+"duration": 42.9,
+"listeners": 86219,
+"src": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/dd/d8/24/ddd824e9-9a9f-ade1-648c-42617bd81466/mzaf_4013824990062802805.plus.aac.p.m4a",
+"url": "https://music.apple.com/us/album/spamton/1586414623?i=1586414645"
+},
+{
+"key": "nowsyourchancetobea",
+"title": "NOW'S YOUR CHANCE TO BE A",
+"chapter": "Chapter 2",
+"track": 23,
+"duration": 67.3,
+"listeners": 139227,
+"src": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/22/69/34/226934be-a114-923e-128a-cd4eba31ac42/mzaf_11472590750131111801.plus.aac.p.m4a",
+"url": "https://music.apple.com/us/album/nows-your-chance-to-be-a/1586414623?i=1586414706"
+},
+{
+"key": "elegantentrance",
+"title": "Elegant Entrance",
+"chapter": "Chapter 2",
+"track": 24,
+"duration": 78.0,
+"listeners": 47889,
+"src": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/e9/8f/91/e98f9118-20fe-f7cc-1c92-1508a6387e31/mzaf_635325331660009726.plus.aac.p.m4a",
+"url": "https://music.apple.com/us/album/elegant-entrance/1586414623?i=1586414707"
+},
+{
+"key": "bluebirdofmisfortune",
+"title": "Bluebird of Misfortune",
+"chapter": "Chapter 2",
+"track": 25,
+"duration": 49.5,
+"listeners": 48126,
+"src": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/28/3b/61/283b616a-5de9-46a5-7c45-a10989229fd0/mzaf_11603697093429649936.plus.aac.p.m4a",
+"url": "https://music.apple.com/us/album/bluebird-of-misfortune/1586414623?i=1586414708"
+},
+{
+"key": "pandorapalace",
+"title": "Pandora Palace",
+"chapter": "Chapter 2",
+"track": 26,
+"duration": 99.6,
+"listeners": 86631,
+"src": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/9b/31/9d/9b319d25-6b46-625b-7f5f-9af230739eb0/mzaf_16307105118846790199.plus.aac.p.m4a",
+"url": "https://music.apple.com/us/album/pandora-palace/1586414623?i=1586414709"
+},
+{
+"key": "keygen",
+"title": "KEYGEN",
+"chapter": "Chapter 2",
+"track": 27,
+"duration": 15.2,
+"listeners": 1595,
+"src": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/a9/88/22/a988227d-686c-53e4-8252-516c6510b27e/mzaf_1756391784558065390.plus.aac.p.m4a",
+"url": "https://music.apple.com/us/album/keygen/1586414623?i=1586414710"
+},
+{
+"key": "acidtunneloflove",
+"title": "Acid Tunnel of Love",
+"chapter": "Chapter 2",
+"track": 28,
+"duration": 90.5,
+"listeners": 100920,
+"src": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/1f/7e/ab/1f7eab31-d8c9-358f-334e-ff8fe8fca929/mzaf_14073703866161025325.plus.aac.p.m4a",
+"url": "https://music.apple.com/us/album/acid-tunnel-of-love/1586414623?i=1586414711"
+},
+{
+"key": "itspronouncedrules",
+"title": "It's Pronounced \"Rules\"",
+"chapter": "Chapter 2",
+"track": 29,
+"duration": 61.2,
+"listeners": 65871,
+"src": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/01/2c/c6/012cc67a-ad00-18ed-9913-05b933d5be7e/mzaf_9760020309509510556.plus.aac.p.m4a",
+"url": "https://music.apple.com/us/album/its-pronounced-rules/1586414623?i=1586414712"
+},
+{
+"key": "lostgirl",
+"title": "Lost Girl",
+"chapter": "Chapter 2",
+"track": 30,
+"duration": 80.0,
+"listeners": 97680,
+"src": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/8e/e5/fa/8ee5faa2-cb98-4183-c39f-c304ce42ddd3/mzaf_10965101350895206947.plus.aac.p.m4a",
+"url": "https://music.apple.com/us/album/lost-girl/1586414623?i=1586414713"
+},
+{
+"key": "ferriswheel",
+"title": "Ferris Wheel",
+"chapter": "Chapter 2",
+"track": 31,
+"duration": 79.2,
+"listeners": 62073,
+"src": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/b2/1e/57/b21e5738-1464-4dfc-181a-071c20f869ea/mzaf_11455231800211193016.plus.aac.p.m4a",
+"url": "https://music.apple.com/us/album/ferris-wheel/1586414623?i=1586414714"
+},
+{
+"key": "attackofthekillerqueen",
+"title": "Attack of the Killer Queen",
+"chapter": "Chapter 2",
+"track": 32,
+"duration": 120.0,
+"listeners": 160788,
+"src": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/70/dd/3d/70dd3d55-e958-25b0-6b0e-d6a4f4ec2260/mzaf_7732016412620433997.plus.aac.p.m4a",
+"url": "https://music.apple.com/us/album/attack-of-the-killer-queen-feat-lena-raine-marcy-nabors/1586414623?i=1586414715"
+},
+{
+"key": "gigasize",
+"title": "Giga Size",
+"chapter": "Chapter 2",
+"track": 33,
+"duration": 107.5,
+"listeners": 47350,
+"src": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/f5/f3/50/f5f3503f-66db-6164-da35-937cdb878cd6/mzaf_16300628012273560955.plus.aac.p.m4a",
+"url": "https://music.apple.com/us/album/giga-size/1586414623?i=1586414716"
+},
+{
+"key": "powerscombined",
+"title": "Powers Combined",
+"chapter": "Chapter 2",
+"track": 34,
+"duration": 16.5,
+"listeners": 1371,
+"src": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/cf/2d/87/cf2d875e-237c-4542-3149-29977e2290f6/mzaf_5153249830008109716.plus.aac.p.m4a",
+"url": "https://music.apple.com/us/album/powers-combined/1586414623?i=1586414717"
+},
+{
+"key": "knockyoudown",
+"title": "Knock You Down !!",
+"chapter": "Chapter 2",
+"track": 35,
+"duration": 146.5,
+"listeners": 55395,
+"src": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/d7/3a/9a/d73a9a2a-107d-aacf-0a90-1cc0c742ba2d/mzaf_9653058464507330781.plus.aac.p.m4a",
+"url": "https://music.apple.com/us/album/knock-you-down/1586414623?i=1586414718"
+},
+{
+"key": "thedarktruth",
+"title": "The Dark Truth",
+"chapter": "Chapter 2",
+"track": 36,
+"duration": 72.0,
+"listeners": 44839,
+"src": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/f1/43/26/f143260f-5ead-87f3-caed-dc6c36c0f413/mzaf_4949115777973553464.plus.aac.p.m4a",
+"url": "https://music.apple.com/us/album/the-dark-truth/1586414623?i=1586414719"
+},
+{
+"key": "digitalroots",
+"title": "Digital Roots",
+"chapter": "Chapter 2",
+"track": 37,
+"duration": 33.8,
+"listeners": 38201,
+"src": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/f3/0c/37/f30c37e5-83e1-b157-c413-6b28bebdc2e4/mzaf_11707697397088987667.plus.aac.p.m4a",
+"url": "https://music.apple.com/us/album/digital-roots/1586414623?i=1586414720"
+},
+{
+"key": "dealgonewrong",
+"title": "Deal Gone Wrong",
+"chapter": "Chapter 2",
+"track": 38,
+"duration": 31.3,
+"listeners": 44598,
+"src": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/63/84/b3/6384b371-8959-d4c8-bf38-42d28807a5a2/mzaf_5352601483359734473.plus.aac.p.m4a",
+"url": "https://music.apple.com/us/album/deal-gone-wrong/1586414623?i=1586414722"
+},
+{
+"key": "bigshot",
+"title": "BIG SHOT",
+"chapter": "Chapter 2",
+"track": 39,
+"duration": 142.3,
+"listeners": 196917,
+"src": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/1a/7f/f1/1a7ff17e-d909-6ca3-8c33-228e35d6605a/mzaf_3793125030274445505.plus.aac.p.m4a",
+"url": "https://music.apple.com/us/album/big-shot/1586414623?i=1586414723"
+},
+{
+"key": "arealboy",
+"title": "A Real Boy!",
+"chapter": "Chapter 2",
+"track": 40,
+"duration": 15.7,
+"listeners": 1708,
+"src": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/11/03/d3/1103d3c4-0461-7ae4-5ab5-16c75a981907/mzaf_7795807153790066656.plus.aac.p.m4a",
+"url": "https://music.apple.com/us/album/a-real-boy/1586414623?i=1586414724"
+},
+{
+"key": "dialtone",
+"title": "Dialtone",
+"chapter": "Chapter 2",
+"track": 41,
+"duration": 44.3,
+"listeners": 81338,
+"src": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/85/35/4b/85354bf1-3551-de4d-b525-ea07dc558ece/mzaf_11564976342244712899.plus.aac.p.m4a",
+"url": "https://music.apple.com/us/album/dialtone/1586414623?i=1586414725"
+},
+{
+"key": "sans",
+"title": "sans.",
+"chapter": "Chapter 2",
+"track": 42,
+"duration": 50.6,
+"listeners": 0,
+"src": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/f6/a9/72/f6a972fc-2843-a894-c62e-04bd3713f2de/mzaf_9523123680770083063.plus.aac.p.m4a",
+"url": "https://music.apple.com/us/album/sans/1586414623?i=1586414726"
+},
+{
+"key": "chilljailbreakalarmtostudyandrelaxto",
+"title": "Chill Jailbreak Alarm To Study And Relax To",
+"chapter": "Chapter 2",
+"track": 43,
+"duration": 24.0,
+"listeners": 1474,
+"src": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/77/3a/ce/773ace0b-03b8-c69b-2b78-de867df66d97/mzaf_10342709243312351039.plus.aac.p.m4a",
+"url": "https://music.apple.com/us/album/chill-jailbreak-alarm-to-study-and-relax-to/1586414623?i=1586414727"
+},
+{
+"key": "youcanalwayscomehome",
+"title": "You Can Always Come Home",
+"chapter": "Chapter 2",
+"track": 44,
+"duration": 100.8,
+"listeners": 103534,
+"src": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/a9/db/62/a9db6210-31ec-2ac7-7bbd-2a2cdcb88052/mzaf_14351973160970894074.plus.aac.p.m4a",
+"url": "https://music.apple.com/us/album/you-can-always-come-home/1586414623?i=1586414728"
+},
+{
+"key": "untilnexttime",
+"title": "Until Next Time",
+"chapter": "Chapter 2",
+"track": 45,
+"duration": 62.1,
+"listeners": 53330,
+"src": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/13/25/00/1325002b-3db7-d41b-3ac5-405573aef0a7/mzaf_17990038657815495293.plus.aac.p.m4a",
+"url": "https://music.apple.com/us/album/until-next-time-feat-laura-shigihara/1586414623?i=1586414729"
+},
+{
+"key": "beforethestory",
+"title": "Before the Story",
+"chapter": "Chapter 2",
+"track": 46,
+"duration": 88.6,
+"listeners": 89706,
+"src": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/56/2a/7b/562a7b4e-1dc4-5e2b-eb77-9563f37bb404/mzaf_15612430516995612104.plus.aac.p.m4a",
+"url": "https://music.apple.com/us/album/before-the-story/1586414623?i=1586414730"
+},
+{
+"key": "berdlyrejectedconcept",
+"title": "Berdly (Rejected Concept)",
+"chapter": "Chapter 2",
+"track": 47,
+"duration": 20.4,
+"listeners": 1702,
+"src": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/9d/df/d5/9ddfd568-2db3-09a5-6475-a53a03b6c00e/mzaf_6245284408567029026.plus.aac.p.m4a",
+"url": "https://music.apple.com/us/album/berdly-rejected-concept/1586414623?i=1586414731"
+},
+{
+"key": "flashbackexcerpt",
+"title": "Flashback (Excerpt)",
+"chapter": "Chapter 3",
+"track": 1,
+"duration": 32.0,
+"listeners": 41571,
+"src": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/2a/27/67/2a276785-db1a-3f6f-3269-9b015eaf71a7/mzaf_12970998825564394929.plus.aac.p.m4a",
+"url": "https://music.apple.com/us/album/flashback-excerpt/1818714562?i=1818714563"
+},
+{
+"key": "featurepresentation",
+"title": "Feature Presentation",
+"chapter": "Chapter 3",
+"track": 2,
+"duration": 42.3,
+"listeners": 45026,
+"src": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/4f/59/21/4f5921d1-57e2-c8b8-6c7b-11daba27fa24/mzaf_4508065514043742379.plus.aac.p.m4a",
+"url": "https://music.apple.com/us/album/feature-presentation/1818714562?i=1818714564"
+},
+{
+"key": "andnowfortodayssponsors",
+"title": "And Now For Today’s Sponsors…!",
+"chapter": "Chapter 3",
+"track": 3,
+"duration": 31.4,
+"listeners": 45210,
+"src": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/ff/03/58/ff035886-1836-ffb2-84fd-a648f0502657/mzaf_463559881958185783.plus.aac.p.m4a",
+"url": "https://music.apple.com/us/album/and-now-for-todays-sponsors/1818714562?i=1818714565"
+},
+{
+"key": "miketheboardplease",
+"title": "MIKE, the BOARD, please!",
+"chapter": "Chapter 3",
+"track": 4,
+"duration": 32.8,
+"listeners": 45588,
+"src": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/90/61/bd/9061bdd2-ef17-39e6-ddfb-9c790c4f6afc/mzaf_17048074692656121037.plus.aac.p.m4a",
+"url": "https://music.apple.com/us/album/mike-the-board-please/1818714562?i=1818714566"
+},
+{
+"key": "sandyboard",
+"title": "Sandy Board",
+"chapter": "Chapter 3",
+"track": 5,
+"duration": 78.4,
+"listeners": 36435,
+"src": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/31/7f/0d/317f0d8d-126b-0d1d-7a9f-518e90057787/mzaf_15497118815102142351.plus.aac.p.m4a",
+"url": "https://music.apple.com/us/album/sandy-board/1818714562?i=1818714567"
+},
+{
+"key": "adventureboard",
+"title": "Adventure Board",
+"chapter": "Chapter 3",
+"track": 6,
+"duration": 59.3,
+"listeners": 35048,
+"src": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/74/7b/56/747b56e4-ec0e-9944-e11b-a92d86a046c6/mzaf_3165495108347696977.plus.aac.p.m4a",
+"url": "https://music.apple.com/us/album/adventure-board/1818714562?i=1818714837"
+},
+{
+"key": "query",
+"title": "Query?",
+"chapter": "Chapter 3",
+"track": 7,
+"duration": 24.8,
+"listeners": 903,
+"src": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/54/f8/03/54f803aa-5029-bbed-fd01-cfadcb7bc7c1/mzaf_17557586796836790527.plus.aac.p.m4a",
+"url": "https://music.apple.com/us/album/query/1818714562?i=1818714838"
+},
+{
+"key": "quiz",
+"title": "Quiz!",
+"chapter": "Chapter 3",
+"track": 8,
+"duration": 76.8,
+"listeners": 35992,
+"src": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/44/4b/b3/444bb3ee-10b1-1cef-024e-2c18506c4478/mzaf_2186151252353158622.plus.aac.p.m4a",
+"url": "https://music.apple.com/us/album/quiz/1818714562?i=1818714839"
+},
+{
+"key": "digdigtothecenteroftheearth",
+"title": "Dig! Dig! To The Center of the Earth!",
+"chapter": "Chapter 3",
+"track": 9,
+"duration": 7.9,
+"listeners": 861,
+"src": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/68/29/ee/6829ee20-5b91-9996-8fe1-9a768efb8a85/mzaf_1996036832845082503.plus.aac.p.m4a",
+"url": "https://music.apple.com/us/album/dig-dig-to-the-center-of-the-earth/1818714562?i=1818714840"
+},
+{
+"key": "pushingbuddies",
+"title": "Pushing Buddies",
+"chapter": "Chapter 3",
+"track": 10,
+"duration": 19.8,
+"listeners": 921,
+"src": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/77/bd/10/77bd10e3-e332-ec7d-c069-2ec7feefbf54/mzaf_8254421580158639352.plus.aac.p.m4a",
+"url": "https://music.apple.com/us/album/pushing-buddies/1818714562?i=1818714841"
+},
+{
+"key": "ruderbuster",
+"title": "Ruder Buster",
+"chapter": "Chapter 3",
+"track": 11,
+"duration": 106.6,
+"listeners": 105894,
+"src": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/cc/29/cc/cc29ccfc-623a-efc1-0ecb-4ce90d6486ec/mzaf_14048001768862364119.plus.aac.p.m4a",
+"url": "https://music.apple.com/us/album/ruder-buster/1818714562?i=1818714842"
+},
+{
+"key": "physicalchallenge",
+"title": "Physical Challenge",
+"chapter": "Chapter 3",
+"track": 12,
+"duration": 107.0,
+"listeners": 39670,
+"src": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/cc/22/13/cc221323-2d3d-4d06-9ddf-93bd208c0748/mzaf_3493995718201038329.plus.aac.p.m4a",
+"url": "https://music.apple.com/us/album/physical-challenge/1818714562?i=1818714843"
+},
+{
+"key": "boardclear",
+"title": "Board Clear!",
+"chapter": "Chapter 3",
+"track": 13,
+"duration": 34.8,
+"listeners": 33418,
+"src": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/18/ba/67/18ba6761-de55-17be-d0eb-983c4389c782/mzaf_7752249183442020251.plus.aac.p.m4a",
+"url": "https://music.apple.com/us/album/board-clear/1818714562?i=1818714844"
+},
+{
+"key": "welcometothegreenroom",
+"title": "Welcome to the Green Room",
+"chapter": "Chapter 3",
+"track": 14,
+"duration": 90.4,
+"listeners": 62498,
+"src": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/34/b8/9f/34b89fdf-1359-ba6f-1e87-25e4ad7e012a/mzaf_9815345634923034456.plus.aac.p.m4a",
+"url": "https://music.apple.com/us/album/welcome-to-the-green-room/1818714562?i=1818714845"
+},
+{
+"key": "vaporbuster",
+"title": "Vapor Buster",
+"chapter": "Chapter 3",
+"track": 15,
+"duration": 120.0,
+"listeners": 54588,
+"src": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/c3/7d/03/c37d0340-9a5c-4b24-d389-b3e37f112772/mzaf_17448492545022395702.plus.aac.p.m4a",
+"url": "https://music.apple.com/us/album/vapor-buster/1818714562?i=1818714846"
+},
+{
+"key": "paradiseparadise",
+"title": "Paradise, Paradise",
+"chapter": "Chapter 3",
+"track": 16,
+"duration": 150.9,
+"listeners": 43653,
+"src": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/86/ad/82/86ad8227-18de-7c76-b85a-c8d55281e5e4/mzaf_14337716275175035670.plus.aac.p.m4a",
+"url": "https://music.apple.com/us/album/paradise-paradise/1818714562?i=1818714847"
+},
+{
+"key": "raftride",
+"title": "Raft Ride",
+"chapter": "Chapter 3",
+"track": 17,
+"duration": 69.4,
+"listeners": 33083,
+"src": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/10/9e/c4/109ec457-2931-3b84-e791-dcb85da494e6/mzaf_12502328429748631090.plus.aac.p.m4a",
+"url": "https://music.apple.com/us/album/raft-ride/1818714562?i=1818714848"
+},
+{
+"key": "southoftheborder",
+"title": "SOUTH OF THE BORDER!!",
+"chapter": "Chapter 3",
+"track": 18,
+"duration": 12.0,
+"listeners": 997,
+"src": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/c6/a8/d7/c6a8d71b-b3ea-3a7f-a31f-9b171f7e2546/mzaf_14582430483529577618.plus.aac.p.m4a",
+"url": "https://music.apple.com/us/album/south-of-the-border/1818714562?i=1818714849"
+},
+{
+"key": "soundcheck",
+"title": "Sound Check",
+"chapter": "Chapter 3",
+"track": 19,
+"duration": 25.6,
+"listeners": 908,
+"src": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/93/3f/da/933fda30-3ba9-92c1-24d1-2c61d68dcfa2/mzaf_17682561085830486136.plus.aac.p.m4a",
+"url": "https://music.apple.com/us/album/sound-check/1818714562?i=1818714850"
+},
+{
+"key": "raiseupyourbat",
+"title": "Raise Up Your Bat",
+"chapter": "Chapter 3",
+"track": 20,
+"duration": 133.6,
+"listeners": 78932,
+"src": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/86/f7/cc/86f7cc66-f56e-82de-d38d-35733927f24c/mzaf_12008988544477056118.plus.aac.p.m4a",
+"url": "https://music.apple.com/us/album/raise-up-your-bat/1818714562?i=1818714851"
+},
+{
+"key": "kingofrolypoly",
+"title": "KING OF ROLYPOLY",
+"chapter": "Chapter 3",
+"track": 21,
+"duration": 48.4,
+"listeners": 34314,
+"src": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/7d/d6/88/7dd68864-155a-2fc8-83d9-3485020840a1/mzaf_9716736985913547305.plus.aac.p.m4a",
+"url": "https://music.apple.com/us/album/king-of-rolypoly/1818714562?i=1818714852"
+},
+{
+"key": "glowingsnow",
+"title": "Glowing Snow",
+"chapter": "Chapter 3",
+"track": 22,
+"duration": 142.5,
+"listeners": 50659,
+"src": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/2d/ae/4d/2dae4d60-2831-0473-839b-51cd1c9a99a1/mzaf_313295452883746903.plus.aac.p.m4a",
+"url": "https://music.apple.com/us/album/glowing-snow/1818714562?i=1818714853"
+},
+{
+"key": "bigcityboard",
+"title": "Big City Board",
+"chapter": "Chapter 3",
+"track": 23,
+"duration": 82.8,
+"listeners": 31745,
+"src": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/e3/01/f6/e301f6b4-ff76-a431-ffb6-99978c1b33f1/mzaf_9159195191611569772.plus.aac.p.m4a",
+"url": "https://music.apple.com/us/album/big-city-board/1818714562?i=1818714854"
+},
+{
+"key": "doomboard",
+"title": "Doom Board",
+"chapter": "Chapter 3",
+"track": 24,
+"duration": 52.1,
+"listeners": 33427,
+"src": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/6f/9d/8b/6f9d8b4d-74fa-fb63-6b02-5e2ed662dc1a/mzaf_12134073441717023921.plus.aac.p.m4a",
+"url": "https://music.apple.com/us/album/doom-board/1818714562?i=1818714855"
+},
+{
+"key": "metaphysicalchallenge",
+"title": "Metaphysical Challenge",
+"chapter": "Chapter 3",
+"track": 25,
+"duration": 52.1,
+"listeners": 31988,
+"src": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/4a/f1/b7/4af1b7fe-cbe5-75c0-906a-3c1ca6c8f635/mzaf_14542042744993284454.plus.aac.p.m4a",
+"url": "https://music.apple.com/us/album/metaphysical-challenge/1818714562?i=1818714856"
+},
+{
+"key": "tvworld",
+"title": "TV WORLD",
+"chapter": "Chapter 3",
+"track": 26,
+"duration": 129.1,
+"listeners": 73647,
+"src": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/b8/ae/d4/b8aed437-09f7-ba21-1e02-9c7b4c28fdb8/mzaf_13374626880671344530.plus.aac.p.m4a",
+"url": "https://music.apple.com/us/album/tv-world/1818714562?i=1818714857"
+},
+{
+"key": "itstvtime",
+"title": "It’s TV Time!",
+"chapter": "Chapter 3",
+"track": 27,
+"duration": 165.4,
+"listeners": 101713,
+"src": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/7a/2a/ab/7a2aab85-a12d-fa0a-6646-c148029cfa46/mzaf_15659071078661072833.plus.aac.p.m4a",
+"url": "https://music.apple.com/us/album/its-tv-time/1818714562?i=1818714858"
+},
+{
+"key": "halloffame",
+"title": "Hall of Fame",
+"chapter": "Chapter 3",
+"track": 28,
+"duration": 30.3,
+"listeners": 34993,
+"src": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/72/47/de/7247debf-e242-906c-23b9-b1ab1b0ba11e/mzaf_5528976479835521990.plus.aac.p.m4a",
+"url": "https://music.apple.com/us/album/hall-of-fame/1818714562?i=1818714859"
+},
+{
+"key": "breath",
+"title": "Breath",
+"chapter": "Chapter 3",
+"track": 29,
+"duration": 14.6,
+"listeners": 1024,
+"src": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/80/00/41/800041a9-ee89-2318-3a99-47f945949934/mzaf_9992471238419190134.plus.aac.p.m4a",
+"url": "https://music.apple.com/us/album/breath/1818714562?i=1818714860"
+},
+{
+"key": "blackknife",
+"title": "Black Knife",
+"chapter": "Chapter 3",
+"track": 30,
+"duration": 117.2,
+"listeners": 105149,
+"src": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/13/91/ab/1391ab50-835c-b93a-42a6-a20124f70190/mzaf_12811713271363121993.plus.aac.p.m4a",
+"url": "https://music.apple.com/us/album/black-knife/1818714562?i=1818714861"
+},
+{
+"key": "crickets",
+"title": "Crickets",
+"chapter": "Chapter 3",
+"track": 31,
+"duration": 36.9,
+"listeners": 34270,
+"src": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/f7/33/3e/f7333ea3-7f1c-cf5b-3cc2-dd296361c1ac/mzaf_10904802815947384428.plus.aac.p.m4a",
+"url": "https://music.apple.com/us/album/crickets/1818714562?i=1818714862"
+},
+{
+"key": "dump",
+"title": "Dump",
+"chapter": "Chapter 3",
+"track": 32,
+"duration": 40.9,
+"listeners": 36740,
+"src": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/77/14/61/771461fc-6754-4fc6-1750-2d2dec497de6/mzaf_9868015437765675031.plus.aac.p.m4a",
+"url": "https://music.apple.com/us/album/dump/1818714562?i=1818714863"
+},
+{
+"key": "sword",
+"title": "SWORD",
+"chapter": "Chapter 3",
+"track": 33,
+"duration": 132.4,
+"listeners": 35230,
+"src": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/35/6c/59/356c591a-880b-bf10-0704-e5cfc1d67fc1/mzaf_14029740075157375797.plus.aac.p.m4a",
+"url": "https://music.apple.com/us/album/sword/1818714562?i=1818714864"
+},
+{
+"key": "northernlight",
+"title": "NORTHERNLIGHT",
+"chapter": "Chapter 3",
+"track": 34,
+"duration": 22.9,
+"listeners": 1091,
+"src": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/93/39/18/9339180c-8ebf-df6b-88b5-7f398bf4801d/mzaf_1242400240073345766.plus.aac.p.m4a",
+"url": "https://music.apple.com/us/album/northernlight/1818714562?i=1818714865"
+},
+{
+"key": "glaceir",
+"title": "GLACEIR",
+"chapter": "Chapter 3",
+"track": 35,
+"duration": 67.2,
+"listeners": 42687,
+"src": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/8d/84/2f/8d842fda-8be8-699d-de29-d96a0af34f97/mzaf_13522517342054944060.plus.aac.p.m4a",
+"url": "https://music.apple.com/us/album/glaceir/1818714562?i=1818714866"
+},
+{
+"key": "bitroots",
+"title": "BIT ROOTS",
+"chapter": "Chapter 3",
+"track": 36,
+"duration": 77.0,
+"listeners": 29854,
+"src": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/08/43/48/0843487b-4f73-017a-0d60-34b4779fcd0c/mzaf_11984903604836058372.plus.aac.p.m4a",
+"url": "https://music.apple.com/us/album/bit-roots/1818714562?i=1818714897"
+},
+{
+"key": "eram",
+"title": "ERAM",
+"chapter": "Chapter 3",
+"track": 37,
+"duration": 15.8,
+"listeners": 913,
+"src": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/da/68/22/da6822be-9daf-86d0-231c-da1f87223766/mzaf_15172676241762374686.plus.aac.p.m4a",
+"url": "https://music.apple.com/us/album/eram/1818714562?i=1818714898"
+},
+{
+"key": "burningeyes",
+"title": "BURNING EYES",
+"chapter": "Chapter 3",
+"track": 38,
+"duration": 65.1,
+"listeners": 40091,
+"src": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/7e/5d/bd/7e5dbdd8-a1d3-93bc-da30-c2286b3fb0a6/mzaf_11338248321096261382.plus.aac.p.m4a",
+"url": "https://music.apple.com/us/album/burning-eyes/1818714562?i=1818714899"
+},
+{
+"key": "oldwoodenrafters",
+"title": "Old wooden rafters",
+"chapter": "Chapter 4",
+"track": 39,
+"duration": 99.0,
+"listeners": 34792,
+"src": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/72/a8/9c/72a89c9e-aab9-ed71-cadb-459f6beae2c6/mzaf_14782548018846525061.plus.aac.p.m4a",
+"url": "https://music.apple.com/us/album/old-wooden-rafters/1818714562?i=1818714900"
+},
+{
+"key": "hymn",
+"title": "Hymn",
+"chapter": "Chapter 4",
+"track": 40,
+"duration": 33.8,
+"listeners": 30360,
+"src": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/ef/82/96/ef829696-754b-06e6-4cf7-2826f7661d74/mzaf_2470190454406293654.plus.aac.p.m4a",
+"url": "https://music.apple.com/us/album/hymn/1818714562?i=1818714901"
+},
+{
+"key": "anotherdayinhometown",
+"title": "Another day in hometown",
+"chapter": "Chapter 4",
+"track": 41,
+"duration": 139.0,
+"listeners": 38785,
+"src": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/34/62/2b/34622b72-634d-0d7d-ff33-6fe7c75d51c0/mzaf_11522543865019561266.plus.aac.p.m4a",
+"url": "https://music.apple.com/us/album/another-day-in-hometown/1818714562?i=1818714902"
+},
+{
+"key": "friends",
+"title": "Friends",
+"chapter": "Chapter 4",
+"track": 42,
+"duration": 85.6,
+"listeners": 33298,
+"src": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/10/14/b2/1014b2bf-c167-da3e-ba49-faaf1c9ce79a/mzaf_9384911487875019244.plus.aac.p.m4a",
+"url": "https://music.apple.com/us/album/friends/1818714562?i=1818714903"
+},
+{
+"key": "castlefunk",
+"title": "Castle Funk",
+"chapter": "Chapter 4",
+"track": 43,
+"duration": 176.6,
+"listeners": 47095,
+"src": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/cd/ce/8c/cdce8c1e-b1d4-b781-f025-c40f4745cf5a/mzaf_1043516770122338930.plus.aac.p.m4a",
+"url": "https://music.apple.com/us/album/castle-funk/1818714562?i=1818714904"
+},
+{
+"key": "knockyoudownrhythmver",
+"title": "Knock You Down!! (Rhythm Ver.)",
+"chapter": "Chapter 4",
+"track": 44,
+"duration": 137.8,
+"listeners": 28783,
+"src": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/77/bc/a2/77bca294-3a00-348d-58b7-86548ce027b9/mzaf_17053680108340635100.plus.aac.p.m4a",
+"url": "https://music.apple.com/us/album/knock-you-down-rhythm-ver/1818714562?i=1818714905"
+},
+{
+"key": "gingerbreadhouse",
+"title": "Gingerbread House",
+"chapter": "Chapter 4",
+"track": 45,
+"duration": 87.8,
+"listeners": 31426,
+"src": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/95/d2/a1/95d2a1fa-8f94-dc3e-bea5-f0671f628ebf/mzaf_3148552483636899424.plus.aac.p.m4a",
+"url": "https://music.apple.com/us/album/gingerbread-house/1818714562?i=1818714906"
+},
+{
+"key": "thedistancebetweentwo",
+"title": "The distance between two",
+"chapter": "Chapter 4",
+"track": 46,
+"duration": 42.7,
+"listeners": 41026,
+"src": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/39/cb/f6/39cbf63d-8d48-ae51-ebcb-064e17f625bd/mzaf_7483799200271998547.plus.aac.p.m4a",
+"url": "https://music.apple.com/us/album/the-distance-between-two/1818714562?i=1818714907"
+},
+{
+"key": "c",
+"title": "C",
+"chapter": "Chapter 4",
+"track": 47,
+"duration": 41.6,
+"listeners": 26967,
+"src": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/56/14/88/56148867-1f9f-a269-9664-0cd806d34bf0/mzaf_10037208497058507572.plus.aac.p.m4a",
+"url": "https://music.apple.com/us/album/c/1818714562?i=1818714908"
+},
+{
+"key": "atrium",
+"title": "ATRIUM",
+"chapter": "Chapter 4",
+"track": 48,
+"duration": 60.0,
+"listeners": 30815,
+"src": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/14/48/3c/14483c4f-9b00-d893-4312-ec4eb58daa07/mzaf_16530430348725888450.plus.aac.p.m4a",
+"url": "https://music.apple.com/us/album/atrium/1818714562?i=1818714909"
+},
+{
+"key": "darksanctuary",
+"title": "Dark Sanctuary feat. Itoki Hana",
+"chapter": "Chapter 4",
+"track": 49,
+"duration": 106.1,
+"listeners": 69614,
+"src": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/ff/e2/e2/ffe2e24c-39fd-e242-a0ad-4202d8c11938/mzaf_12355700471553077089.plus.aac.p.m4a",
+"url": "https://music.apple.com/us/album/dark-sanctuary-feat-itoki-hana/1818714562?i=1818714910"
+},
+{
+"key": "fromnowonbattle2",
+"title": "From Now On (Battle 2)",
+"chapter": "Chapter 4",
+"track": 50,
+"duration": 108.7,
+"listeners": 55013,
+"src": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/ba/5e/27/ba5e2707-ef88-f7bd-3d8a-0c61e343b06e/mzaf_14124481377073142573.plus.aac.p.m4a",
+"url": "https://music.apple.com/us/album/from-now-on-battle-2/1818714562?i=1818714911"
+},
+{
+"key": "gyaahaha",
+"title": "Gyaa Ha ha!",
+"chapter": "Chapter 4",
+"track": 51,
+"duration": 75.2,
+"listeners": 37906,
+"src": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/e4/11/18/e4111813-79e6-4979-bb9d-b1eca45202bc/mzaf_5511741842602187085.plus.aac.p.m4a",
+"url": "https://music.apple.com/us/album/gyaa-ha-ha/1818714562?i=1818714912"
+},
+{
+"key": "fireplace",
+"title": "Fireplace",
+"chapter": "Chapter 4",
+"track": 52,
+"duration": 157.5,
+"listeners": 37362,
+"src": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/f3/99/ae/f399aed7-f9d8-a611-5556-14e5520441d3/mzaf_10481914364529588719.plus.aac.p.m4a",
+"url": "https://music.apple.com/us/album/fireplace/1818714562?i=1818714913"
+},
+{
+"key": "adarkzone",
+"title": "A DARK ZONE",
+"chapter": "Chapter 4",
+"track": 53,
+"duration": 138.0,
+"listeners": 53898,
+"src": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/19/df/c6/19dfc6e4-cc49-3254-d094-4fddc8746abe/mzaf_8713461771456786026.plus.aac.p.m4a",
+"url": "https://music.apple.com/us/album/a-dark-zone/1818714562?i=1818714914"
+},
+{
+"key": "mysteriousringing",
+"title": "Mysterious Ringing",
+"chapter": "Chapter 4",
+"track": 54,
+"duration": 22.2,
+"listeners": 908,
+"src": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/0a/b7/33/0ab733a8-88b7-e59b-76be-7d208d9869fc/mzaf_3176138639620674227.plus.aac.p.m4a",
+"url": "https://music.apple.com/us/album/mysterious-ringing/1818714562?i=1818714915"
+},
+{
+"key": "everhigher",
+"title": "Ever Higher",
+"chapter": "Chapter 4",
+"track": 55,
+"duration": 87.3,
+"listeners": 37937,
+"src": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/da/c8/f9/dac8f943-3387-ebed-69b1-52d07f440087/mzaf_14803724896972994285.plus.aac.p.m4a",
+"url": "https://music.apple.com/us/album/ever-higher/1818714562?i=1818714916"
+},
+{
+"key": "wisewords",
+"title": "Wise words",
+"chapter": "Chapter 4",
+"track": 56,
+"duration": 42.7,
+"listeners": 38600,
+"src": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/a4/56/97/a45697f8-315e-c9da-1309-b8183bd04ce4/mzaf_13605812471467812476.plus.aac.p.m4a",
+"url": "https://music.apple.com/us/album/wise-words/1818714562?i=1818714917"
+},
+{
+"key": "pianothatmaynotbeplayedthatwell",
+"title": "Piano that may not be played that well",
+"chapter": "Chapter 4",
+"track": 57,
+"duration": 42.2,
+"listeners": 38693,
+"src": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/d7/8d/9a/d78d9a1a-1da0-9c63-1975-80002e7be600/mzaf_9550108017912871084.plus.aac.p.m4a",
+"url": "https://music.apple.com/us/album/piano-that-may-not-be-played-that-well/1818714562?i=1818714918"
+},
+{
+"key": "hammerofjustice",
+"title": "Hammer of Justice",
+"chapter": "Chapter 4",
+"track": 58,
+"duration": 133.3,
+"listeners": 90056,
+"src": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/8d/2f/8d/8d2f8d67-ed76-2097-9dda-af2be9a16707/mzaf_18190923747326542823.plus.aac.p.m4a",
+"url": "https://music.apple.com/us/album/hammer-of-justice/1818714562?i=1818714919"
+},
+{
+"key": "12am",
+"title": "12am",
+"chapter": "Chapter 4",
+"track": 59,
+"duration": 34.9,
+"listeners": 44908,
+"src": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/38/ba/ed/38baedee-4452-f165-2d5f-320ffaf8145b/mzaf_13664776017081163306.plus.aac.p.m4a",
+"url": "https://music.apple.com/us/album/12am/1818714562?i=1818714920"
+},
+{
+"key": "thesecondsanctuary",
+"title": "The Second Sanctuary",
+"chapter": "Chapter 4",
+"track": 60,
+"duration": 166.6,
+"listeners": 61777,
+"src": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/e8/b1/71/e8b1717c-3d57-43af-0671-2f0ef1ebc26e/mzaf_7278437834665726325.plus.aac.p.m4a",
+"url": "https://music.apple.com/us/album/the-second-sanctuary/1818714562?i=1818714921"
+},
+{
+"key": "ripple",
+"title": "Ripple",
+"chapter": "Chapter 4",
+"track": 61,
+"duration": 151.4,
+"listeners": 32962,
+"src": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/b5/77/ec/b577ece5-0744-b20b-d0bd-c9c784bc6390/mzaf_687188729789739858.plus.aac.p.m4a",
+"url": "https://music.apple.com/us/album/ripple/1818714562?i=1818714922"
+},
+{
+"key": "13am",
+"title": "13am",
+"chapter": "Chapter 4",
+"track": 62,
+"duration": 86.3,
+"listeners": 40504,
+"src": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/f2/80/d5/f280d5ad-267c-020c-1e7e-78480bd63f5f/mzaf_1786591754227425942.plus.aac.p.m4a",
+"url": "https://music.apple.com/us/album/13am/1818714562?i=1818714923"
+},
+{
+"key": "thethirdsanctuary",
+"title": "The Third Sanctuary",
+"chapter": "Chapter 4",
+"track": 63,
+"duration": 247.4,
+"listeners": 72892,
+"src": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/cf/7d/e6/cf7de6cb-f2c3-cbf8-f21f-8e081686e733/mzaf_9218540191945082863.plus.aac.p.m4a",
+"url": "https://music.apple.com/us/album/the-third-sanctuary/1818714562?i=1818714924"
+},
+{
+"key": "darkplace",
+"title": "Dark Place",
+"chapter": "Chapter 4",
+"track": 64,
+"duration": 58.9,
+"listeners": 38712,
+"src": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/1a/13/b6/1a13b6d3-234a-5a03-8b4d-3b05985a38cc/mzaf_2431201846788480886.plus.aac.p.m4a",
+"url": "https://music.apple.com/us/album/dark-place/1818714562?i=1818714925"
+},
+{
+"key": "heavyfootsteps",
+"title": "Heavy Footsteps",
+"chapter": "Chapter 4",
+"track": 65,
+"duration": 38.4,
+"listeners": 31763,
+"src": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/95/85/81/95858175-d41e-d969-dc79-de212fc25692/mzaf_13619250339809064015.plus.aac.p.m4a",
+"url": "https://music.apple.com/us/album/heavy-footsteps/1818714562?i=1818714926"
+},
+{
+"key": "crumblingtower",
+"title": "Crumbling Tower",
+"chapter": "Chapter 4",
+"track": 66,
+"duration": 169.0,
+"listeners": 33757,
+"src": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/0e/af/d0/0eafd0e5-8a60-04fc-9912-98ebb809a54a/mzaf_1033314490298410752.plus.aac.p.m4a",
+"url": "https://music.apple.com/us/album/crumbling-tower/1818714562?i=1818714927"
+},
+{
+"key": "spawn",
+"title": "SPAWN",
+"chapter": "Chapter 4",
+"track": 67,
+"duration": 71.1,
+"listeners": 38140,
+"src": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/61/37/a1/6137a199-a63f-e566-dbb1-18c9b40e9a3d/mzaf_11623594313691700962.plus.aac.p.m4a",
+"url": "https://music.apple.com/us/album/spawn/1818714562?i=1818714928"
+},
+{
+"key": "guardian",
+"title": "GUARDIAN",
+"chapter": "Chapter 4",
+"track": 68,
+"duration": 226.3,
+"listeners": 60028,
+"src": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/a2/14/1e/a2141e66-5d42-c7c5-d905-fac7b0a84d96/mzaf_10033332305683596984.plus.aac.p.m4a",
+"url": "https://music.apple.com/us/album/guardian/1818714562?i=1818714929"
+},
+{
+"key": "needahand",
+"title": "Need a hand!?",
+"chapter": "Chapter 4",
+"track": 69,
+"duration": 46.5,
+"listeners": 45616,
+"src": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/94/9e/b0/949eb094-aa31-a9d2-f832-87e00df54f2a/mzaf_13425484646375077202.plus.aac.p.m4a",
+"url": "https://music.apple.com/us/album/need-a-hand/1818714562?i=1818714930"
+},
+{
+"key": "theplacewhereitrained",
+"title": "The place where it rained",
+"chapter": "Chapter 4",
+"track": 70,
+"duration": 172.7,
+"listeners": 65911,
+"src": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/b0/f9/aa/b0f9aae4-93f1-8023-858f-ebd7bc050fc7/mzaf_6759163922482601271.plus.aac.p.m4a",
+"url": "https://music.apple.com/us/album/the-place-where-it-rained/1818714562?i=1818714931"
+},
+{
+"key": "theoljitterbug",
+"title": "The Ol’ Jitterbug",
+"chapter": "Chapter 4",
+"track": 71,
+"duration": 22.2,
+"listeners": 1004,
+"src": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/fe/44/8c/fe448c42-c229-fb93-c285-d37829b676a1/mzaf_452955552335461626.plus.aac.p.m4a",
+"url": "https://music.apple.com/us/album/the-ol-jitterbug/1818714562?i=1818714932"
+},
+{
+"key": "neverendingnight",
+"title": "Neverending Night",
+"chapter": "Chapter 4",
+"track": 72,
+"duration": 99.8,
+"listeners": 63862,
+"src": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/3d/52/a1/3d52a183-d189-2c8d-0002-70aef2a882c5/mzaf_16630364009706935262.plus.aac.p.m4a",
+"url": "https://music.apple.com/us/album/neverending-night/1818714562?i=1818714933"
+},
+{
+"key": "thelegendch4",
+"title": "The LEGEND…?",
+"chapter": "Chapter 4",
+"track": 73,
+"duration": 26.2,
+"listeners": 802,
+"src": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/27/cb/42/27cb427a-5a85-edd9-b772-b001309fb68c/mzaf_8687272938960237243.plus.aac.p.m4a",
+"url": "https://music.apple.com/us/album/the-legend/1818714562?i=1818714934"
+},
+{
+"key": "withhopecrossedonourhearts",
+"title": "With Hope Crossed On Our Hearts",
+"chapter": "Chapter 4",
+"track": 74,
+"duration": 99.0,
+"listeners": 35978,
+"src": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/80/46/3c/80463c6f-206a-27eb-2854-bae08e1b43e0/mzaf_11122334340167640379.plus.aac.p.m4a",
+"url": "https://music.apple.com/us/album/with-hope-crossed-on-our-hearts/1818714562?i=1818714935"
+},
+{
+"key": "volumeadjustment",
+"title": "Volume Adjustment",
+"chapter": "Chapter 4",
+"track": 75,
+"duration": 36.4,
+"listeners": 26732,
+"src": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/f4/f2/17/f4f21752-e5dd-b899-5fcd-9b74bc34ea5e/mzaf_9319738741737831182.plus.aac.p.m4a",
+"url": "https://music.apple.com/us/album/volume-adjustment/1818714562?i=1818714936"
+},
+{
+"key": "catswing",
+"title": "Catswing",
+"chapter": "Chapter 4",
+"track": 76,
+"duration": 118.2,
+"listeners": 40219,
+"src": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/8b/0b/1d/8b0b1d5a-4015-b202-f133-e302127b1af4/mzaf_18109175174540519740.plus.aac.p.m4a",
+"url": "https://music.apple.com/us/album/catswing/1818714562?i=1818714937"
+},
+{
+"key": "airwaves",
+"title": "Air Waves",
+"chapter": "Chapter 4",
+"track": 77,
+"duration": 120.0,
+"listeners": 46187,
+"src": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/da/af/df/daafdfed-5548-135d-45d8-4ba3afb587d5/mzaf_12732644956353960679.plus.aac.p.m4a",
+"url": "https://music.apple.com/us/album/air-waves/1818714562?i=1818714938"
+},
+{
+"key": "concertforyou",
+"title": "Concert for You",
+"chapter": "Chapter 4",
+"track": 78,
+"duration": 2.4,
+"listeners": 801,
+"src": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/0c/08/10/0c0810aa-cbc0-1959-a2b4-e49886b4b704/mzaf_14361470699758473186.plus.aac.p.m4a",
+"url": "https://music.apple.com/us/album/concert-for-you/1818714562?i=1818714939"
+},
+{
+"key": "chapter5logo",
+"title": "Chapter 5 Logo",
+"chapter": "Chapter 5",
+"track": 1,
+"duration": 8.2,
+"listeners": 546,
+"src": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/51/04/87/510487a6-20bf-9621-aac9-012ccb22dd7e/mzaf_322119134342198954.plus.aac.p.m4a",
+"url": "https://music.apple.com/us/album/chapter-5-logo/6783457666?i=6783457668"
+},
+{
+"key": "inappropriaterecycling",
+"title": "Inappropriate Recycling",
+"chapter": "Chapter 5",
+"track": 2,
+"duration": 96.0,
+"listeners": 23342,
+"src": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/b1/45/9b/b1459bae-bfca-fe1f-e16f-b31f2cc1bb7b/mzaf_5883599873878222749.plus.aac.p.m4a",
+"url": "https://music.apple.com/us/album/inappropriate-recycling/6783457666?i=6783457670"
+},
+{
+"key": "piratedojo",
+"title": "Pirate Dojo",
+"chapter": "Chapter 5",
+"track": 3,
+"duration": 52.4,
+"listeners": 21215,
+"src": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/8b/06/cc/8b06ccfb-a1ad-3414-046e-413723d79ac1/mzaf_15387105073619337340.plus.aac.p.m4a",
+"url": "https://music.apple.com/us/album/pirate-dojo/6783457666?i=6783457671"
+},
+{
+"key": "4rdsanctuary",
+"title": "4rd Sanctuary",
+"chapter": "Chapter 5",
+"track": 4,
+"duration": 79.2,
+"listeners": 26702,
+"src": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/b5/a8/39/b5a83968-4480-64ea-6db5-2de21aaa5e73/mzaf_7770000523429238360.plus.aac.p.m4a",
+"url": "https://music.apple.com/us/album/4rd-sanctuary/6783457666?i=6783457672"
+},
+{
+"key": "festival",
+"title": "Festival",
+"chapter": "Chapter 5",
+"track": 5,
+"duration": 120.0,
+"listeners": 22251,
+"src": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/09/15/c4/0915c4b0-840e-5246-2cd2-0df5ee3279b6/mzaf_1669467598424952353.plus.aac.p.m4a",
+"url": "https://music.apple.com/us/album/festival/6783457666?i=6783457675"
+},
+{
+"key": "catfession",
+"title": "Catfession...?",
+"chapter": "Chapter 5",
+"track": 6,
+"duration": 42.1,
+"listeners": 15325,
+"src": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/06/a0/6e/06a06ed6-52d1-bca1-89cd-e1552cdedc3a/mzaf_4353254512595488103.plus.aac.p.m4a",
+"url": "https://music.apple.com/us/album/catfession/6783457666?i=6783457827"
+},
+{
+"key": "bratfession",
+"title": "Bratfession...?",
+"chapter": "Chapter 5",
+"track": 7,
+"duration": 42.1,
+"listeners": 15888,
+"src": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/33/64/13/33641315-b7fb-466f-35b1-7cf3a24e30ba/mzaf_14058718185373434716.plus.aac.p.m4a",
+"url": "https://music.apple.com/us/album/bratfession/6783457666?i=6783457828"
+},
+{
+"key": "iguessiminlove",
+"title": "I guess I'm in love feat. Itoki Hana",
+"chapter": "Chapter 5",
+"track": 8,
+"duration": 177.6,
+"listeners": 19267,
+"src": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/df/af/2b/dfaf2b92-a9a5-d81d-8a52-a8910b5e3372/mzaf_10143982270431396065.plus.aac.p.m4a",
+"url": "https://music.apple.com/us/album/i-guess-im-in-love-feat-itoki-hana/6783457666?i=6783457829"
+},
+{
+"key": "weirderbirds",
+"title": "Weirder Birds",
+"chapter": "Chapter 5",
+"track": 9,
+"duration": 37.9,
+"listeners": 15829,
+"src": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/0f/89/a9/0f89a922-ac43-03f4-8957-a49b2c2dc960/mzaf_10633198747010454781.plus.aac.p.m4a",
+"url": "https://music.apple.com/us/album/weirder-birds/6783457666?i=6783457830"
+},
+{
+"key": "yourdadsbestfriend",
+"title": "Your Dad's Best Friend",
+"chapter": "Chapter 5",
+"track": 10,
+"duration": 28.4,
+"listeners": 773,
+"src": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/ca/ed/1a/caed1a82-63d6-d4b8-3bbf-e6f15538136e/mzaf_3657115672900409261.plus.aac.p.m4a",
+"url": "https://music.apple.com/us/album/your-dads-best-friend/6783457666?i=6783457831"
+},
+{
+"key": "gardenofhopesanddreams",
+"title": "Garden of Hopes and Dreams",
+"chapter": "Chapter 5",
+"track": 11,
+"duration": 203.5,
+"listeners": 36204,
+"src": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/15/ae/c5/15aec566-16fb-cfa5-d6f9-a59e5d87cd42/mzaf_10283118856815311736.plus.aac.p.m4a",
+"url": "https://music.apple.com/us/album/garden-of-hopes-and-dreams/6783457666?i=6783457832"
+},
+{
+"key": "rakuichibuster",
+"title": "Rakuichi Buster feat. Rakuichi",
+"chapter": "Chapter 5",
+"track": 12,
+"duration": 109.7,
+"listeners": 30010,
+"src": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/fc/d7/a5/fcd7a54f-6647-7915-10a0-b757a3264ac4/mzaf_1163128378216343576.plus.aac.p.m4a",
+"url": "https://music.apple.com/us/album/rakuichi-buster-feat-rakuichi/6783457666?i=6783457834"
+},
+{
+"key": "thedinersongofbestfriends",
+"title": "The Diner Song of Best Friends",
+"chapter": "Chapter 5",
+"track": 13,
+"duration": 85.6,
+"listeners": 19235,
+"src": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/e0/11/b6/e011b6bb-f5d9-389d-243e-4605ed88b8d7/mzaf_1828224331506205637.plus.aac.p.m4a",
+"url": "https://music.apple.com/us/album/the-diner-song-of-best-friends/6783457666?i=6783457835"
+},
+{
+"key": "ridetheboard",
+"title": "Ride the Board",
+"chapter": "Chapter 5",
+"track": 14,
+"duration": 10.7,
+"listeners": 519,
+"src": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/17/25/c1/1725c147-d585-3aef-87c2-78eb49002ac1/mzaf_13878305328602389175.plus.aac.p.m4a",
+"url": "https://music.apple.com/us/album/ride-the-board/6783457666?i=6783457836"
+},
+{
+"key": "quietglade",
+"title": "Quiet Glade",
+"chapter": "Chapter 5",
+"track": 15,
+"duration": 197.5,
+"listeners": 23078,
+"src": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/ec/55/e5/ec55e5bc-bb58-04c7-02ed-0a88575a5e20/mzaf_16258529563206724778.plus.aac.p.m4a",
+"url": "https://music.apple.com/us/album/quiet-glade/6783457666?i=6783457837"
+},
+{
+"key": "whomightyoube",
+"title": "Who might you be?",
+"chapter": "Chapter 5",
+"track": 16,
+"duration": 64.0,
+"listeners": 30671,
+"src": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/1f/f7/7b/1ff77bf3-80e0-8089-2799-b300c60d68e2/mzaf_709557620364090453.plus.aac.p.m4a",
+"url": "https://music.apple.com/us/album/who-might-you-be/6783457666?i=6783457838"
+},
+{
+"key": "petaldance",
+"title": "Petal Dance",
+"chapter": "Chapter 5",
+"track": 17,
+"duration": 92.7,
+"listeners": 40913,
+"src": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/6b/2a/b4/6b2ab4ad-da18-9782-4590-aabdc1acb148/mzaf_5444483721002453852.plus.aac.p.m4a",
+"url": "https://music.apple.com/us/album/petal-dance/6783457666?i=6783457839"
+},
+{
+"key": "flyingfeather",
+"title": "Flying Feather",
+"chapter": "Chapter 5",
+"track": 18,
+"duration": 27.7,
+"listeners": 511,
+"src": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/ef/32/ba/ef32ba55-0cce-c551-e54c-785067aebb75/mzaf_15509772813457106468.plus.aac.p.m4a",
+"url": "https://music.apple.com/us/album/flying-feather/6783457666?i=6783457841"
+},
+{
+"key": "sunsetofsevensuns",
+"title": "Sunset of Seven Suns",
+"chapter": "Chapter 5",
+"track": 19,
+"duration": 96.0,
+"listeners": 40850,
+"src": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/01/a8/fb/01a8fbc3-a06b-ccef-8f5f-3ab8270d7df6/mzaf_9884725308893700405.plus.aac.p.m4a",
+"url": "https://music.apple.com/us/album/sunset-of-seven-suns/6783457666?i=6783457842"
+},
+{
+"key": "shop3",
+"title": "Shop 3",
+"chapter": "Chapter 5",
+"track": 20,
+"duration": 75.2,
+"listeners": 25266,
+"src": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/13/59/8e/13598e91-2b1b-6050-6619-bcaa34471f54/mzaf_13018249199212734270.plus.aac.p.m4a",
+"url": "https://music.apple.com/us/album/shop-3/6783457666?i=6783457843"
+},
+{
+"key": "violettactics",
+"title": "Violet Tactics",
+"chapter": "Chapter 5",
+"track": 21,
+"duration": 65.3,
+"listeners": 22501,
+"src": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/af/46/47/af464753-caed-8b8c-8d0a-247f76ba881f/mzaf_124625961803485580.plus.aac.p.m4a",
+"url": "https://music.apple.com/us/album/violet-tactics/6783457666?i=6783457844"
+},
+{
+"key": "flowerking",
+"title": "Flower King",
+"chapter": "Chapter 5",
+"track": 22,
+"duration": 40.0,
+"listeners": 20689,
+"src": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/62/79/8c/62798c5a-7edd-21a9-4e5a-b6c48b6dd16b/mzaf_9720993306036526242.plus.aac.p.m4a",
+"url": "https://music.apple.com/us/album/flower-king/6783457666?i=6783457845"
+},
+{
+"key": "flowerfoyer",
+"title": "Flower Foyer",
+"chapter": "Chapter 5",
+"track": 23,
+"duration": 55.5,
+"listeners": 19059,
+"src": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/c2/2b/06/c22b06a9-e22e-97fa-7ba2-61c9f750fd90/mzaf_9078541598844544391.plus.aac.p.m4a",
+"url": "https://music.apple.com/us/album/flower-foyer/6783457666?i=6783457846"
+},
+{
+"key": "flowercastle",
+"title": "Flower Castle",
+"chapter": "Chapter 5",
+"track": 24,
+"duration": 270.2,
+"listeners": 26909,
+"src": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/d7/da/81/d7da8185-6d2d-3e1d-b671-9c6491b41e7e/mzaf_10405038083644830846.plus.aac.p.m4a",
+"url": "https://music.apple.com/us/album/flower-castle/6783457666?i=6783457847"
+},
+{
+"key": "thousandcafezukan",
+"title": "Thousand Cafe Zukan",
+"chapter": "Chapter 5",
+"track": 25,
+"duration": 89.3,
+"listeners": 20323,
+"src": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/c4/3f/d3/c43fd34a-990c-2580-7c1b-f47412651b67/mzaf_15292184101981901442.plus.aac.p.m4a",
+"url": "https://music.apple.com/us/album/thousand-cafe-zukan/6783457666?i=6783457848"
+},
+{
+"key": "imtelling",
+"title": "I'm Telling!",
+"chapter": "Chapter 5",
+"track": 26,
+"duration": 40.4,
+"listeners": 18373,
+"src": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/ec/05/b6/ec05b676-f347-1834-957c-599f120a1c50/mzaf_14341139131102417366.plus.aac.p.m4a",
+"url": "https://music.apple.com/us/album/im-telling/6783457666?i=6783457849"
+},
+{
+"key": "stopcriminell",
+"title": "Stop, Criminell!",
+"chapter": "Chapter 5",
+"track": 27,
+"duration": 45.2,
+"listeners": 19393,
+"src": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/e2/12/80/e2128084-9a5b-7cf8-15a9-9c4fa5cbfb3a/mzaf_16015951937669945117.plus.aac.p.m4a",
+"url": "https://music.apple.com/us/album/stop-criminell/6783457666?i=6783457850"
+},
+{
+"key": "lovingsteps",
+"title": "Loving Steps",
+"chapter": "Chapter 5",
+"track": 28,
+"duration": 133.7,
+"listeners": 17039,
+"src": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/34/36/df/3436dfc9-fc43-df2f-df0f-b54190c7d366/mzaf_9459887596287698272.plus.aac.p.m4a",
+"url": "https://music.apple.com/us/album/loving-steps/6783457666?i=6783457851"
+},
+{
+"key": "onsen",
+"title": "Onsen",
+"chapter": "Chapter 5",
+"track": 29,
+"duration": 103.4,
+"listeners": 16073,
+"src": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/91/11/7b/91117b27-757c-f9d7-e5d3-f87506bb264c/mzaf_6488284661512600441.plus.aac.p.m4a",
+"url": "https://music.apple.com/us/album/onsen/6783457666?i=6783457852"
+},
+{
+"key": "beautifulbathtime",
+"title": "Beautiful Bathtime",
+"chapter": "Chapter 5",
+"track": 30,
+"duration": 21.6,
+"listeners": 390,
+"src": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/97/e3/59/97e359ae-cea0-45dc-917f-1e5349e4b06e/mzaf_14419288182304096761.plus.aac.p.m4a",
+"url": "https://music.apple.com/us/album/beautiful-bathtime/6783457666?i=6783457853"
+},
+{
+"key": "pink",
+"title": "Pink",
+"chapter": "Chapter 5",
+"track": 31,
+"duration": 73.8,
+"listeners": 18250,
+"src": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/05/0d/9b/050d9b9f-2edd-cc48-16f9-ff3628aa3fa7/mzaf_6070860356092868410.plus.aac.p.m4a",
+"url": "https://music.apple.com/us/album/pink/6783457666?i=6783457854"
+},
+{
+"key": "cutiemewmewmagic",
+"title": "Cutie Mew Mew Magic (feat. Camellia)",
+"chapter": "Chapter 5",
+"track": 32,
+"duration": 184.7,
+"listeners": 56850,
+"src": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/57/46/82/5746825e-f040-802f-96ef-d8b203c16637/mzaf_11586289235894175313.plus.aac.p.m4a",
+"url": "https://music.apple.com/us/album/cutie-mew-mew-magic-feat-camellia/6783457666?i=6783457855"
+},
+{
+"key": "runningsky",
+"title": "Running Sky",
+"chapter": "Chapter 5",
+"track": 33,
+"duration": 142.3,
+"listeners": 31864,
+"src": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/38/bf/0e/38bf0ecf-a7df-3103-5c66-c924709e51c4/mzaf_300914634968385019.plus.aac.p.m4a",
+"url": "https://music.apple.com/us/album/running-sky/6783457666?i=6783457856"
+},
+{
+"key": "flowerman",
+"title": "Flower Man feat. Camellia",
+"chapter": "Chapter 5",
+"track": 34,
+"duration": 192.0,
+"listeners": 54283,
+"src": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/41/93/88/419388b0-413c-eb1b-2c02-4a226637e962/mzaf_10122197328996189423.plus.aac.p.m4a",
+"url": "https://music.apple.com/us/album/flower-man-feat-camellia/6783457666?i=6783457857"
+},
+{
+"key": "thatday",
+"title": "That Day",
+"chapter": "Chapter 5",
+"track": 35,
+"duration": 90.7,
+"listeners": 21588,
+"src": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/6b/a3/1d/6ba31d4f-25d8-1600-0e02-353f829bfa69/mzaf_8744019689448791531.plus.aac.p.m4a",
+"url": "https://music.apple.com/us/album/that-day/6783457666?i=6783457858"
+},
+{
+"key": "dreamwatchers",
+"title": "Dreamwatchers",
+"chapter": "Chapter 5",
+"track": 36,
+"duration": 77.6,
+"listeners": 20018,
+"src": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/6d/ac/e0/6dace055-4460-751a-3e2b-ede000ffe2da/mzaf_13929015285325442786.plus.aac.p.m4a",
+"url": "https://music.apple.com/us/album/dreamwatchers/6783457666?i=6783457859"
+},
+{
+"key": "weakflowers",
+"title": "Weak Flowers",
+"chapter": "Chapter 5",
+"track": 37,
+"duration": 102.3,
+"listeners": 17989,
+"src": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/81/31/42/8131425c-5ac6-28e3-0c65-f600bf6cced7/mzaf_2345377696818758360.plus.aac.p.m4a",
+"url": "https://music.apple.com/us/album/weak-flowers/6783457666?i=6783457860"
+},
+{
+"key": "walkinghome",
+"title": "Walking Home",
+"chapter": "Chapter 5",
+"track": 38,
+"duration": 136.6,
+"listeners": 17992,
+"src": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/19/0a/e4/190ae434-b86d-9740-3da7-7b5a02f5daa9/mzaf_13888500393363473548.plus.aac.p.m4a",
+"url": "https://music.apple.com/us/album/walking-home/6783457666?i=6783457862"
+},
+{
+"key": "scarletforestfromdeltarunepianocollectionsvol1creditsversion",
+"title": "Scarlet Forest (From \"DELTARUNE Piano Collections Vol. 1\") [Credits Version]",
+"chapter": "Chapter 5",
+"track": 39,
+"duration": 99.8,
+"listeners": 13446,
+"src": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/31/88/4f/31884fe0-84a9-98d4-28e1-b76b24f343f8/mzaf_1326504696406251368.plus.aac.p.m4a",
+"url": "https://music.apple.com/us/album/scarlet-forest-from-deltarune-piano-collections-vol/6783457666?i=6783457863"
+},
+{
+"key": "goodnightsweetprince",
+"title": "Goodnight, Sweet Prince",
+"chapter": "Chapter 5",
+"track": 40,
+"duration": 31.4,
+"listeners": 15897,
+"src": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/9a/a8/3a/9aa83a13-4fa1-6c98-526c-ab2e0809e1b2/mzaf_12848292587956101059.plus.aac.p.m4a",
+"url": "https://music.apple.com/us/album/goodnight-sweet-prince/6783457666?i=6783457864"
+}
+]
+}

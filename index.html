@@ -1,0 +1,788 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Deltarune Song Bracket</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=VT323&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --bg: #000;
+    --fg: #fff;
+    --dim: #8a8a99;
+    --soul: #ff1f1f;
+    --gold: #ffd800;
+    --cyan: #3ad5ff;
+    --panel: #0b0b14;
+  }
+  * { box-sizing: border-box; }
+  html, body { margin: 0; background: var(--bg); color: var(--fg); }
+  body {
+    font-family: "VT323", monospace;
+    font-size: 22px;
+    line-height: 1.2;
+    min-height: 100vh;
+    background:
+      radial-gradient(ellipse at 50% -20%, #1a0f3a 0%, transparent 60%),
+      var(--bg);
+  }
+  .px { font-family: "Press Start 2P", monospace; }
+  button { font: inherit; color: inherit; cursor: pointer; }
+  [hidden] { display: none !important; }
+
+  header {
+    text-align: center;
+    padding: 28px 16px 8px;
+  }
+  header h1 {
+    font-family: "Press Start 2P", monospace;
+    font-size: clamp(16px, 3.6vw, 30px);
+    letter-spacing: 2px;
+    margin: 0 0 12px;
+  }
+  header h1 .heart { color: var(--soul); }
+  .status { color: var(--dim); font-size: 22px; min-height: 1.2em; }
+  .status b { color: var(--gold); font-weight: normal; }
+
+  .toolbar {
+    display: flex; gap: 10px; justify-content: center; flex-wrap: wrap;
+    margin: 14px 16px 0;
+  }
+  .btn {
+    background: transparent;
+    border: 2px solid var(--fg);
+    padding: 6px 14px;
+    font-size: 20px;
+  }
+  .btn:hover:not(:disabled) { color: var(--gold); border-color: var(--gold); }
+  .btn:disabled { opacity: .35; cursor: default; }
+
+  main { max-width: 1100px; margin: 0 auto; padding: 16px; }
+
+  /* ---------- mode menu ---------- */
+  .menu-title {
+    text-align: center;
+    font-family: "Press Start 2P", monospace;
+    font-size: 13px; color: var(--cyan);
+    margin: 18px 0 18px;
+  }
+  .modes {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 18px;
+  }
+  .mode {
+    text-align: left;
+    background: var(--panel);
+    border: 4px solid var(--fg);
+    padding: 18px 18px 16px;
+    display: flex; flex-direction: column; gap: 10px;
+  }
+  .mode.featured { grid-column: 1 / -1; }
+  .mode h2 {
+    margin: 0;
+    font-family: "Press Start 2P", monospace;
+    font-size: 15px; line-height: 1.5;
+    display: flex; gap: 10px; align-items: baseline;
+  }
+  .mode h2 .soul { color: transparent; }
+  .mode p { margin: 0; color: var(--dim); font-size: 21px; }
+  .mode .progress-line { color: var(--gold); font-size: 20px; }
+  .mode:hover, .mode:focus-visible { border-color: var(--gold); outline: none; }
+  .mode:hover h2, .mode:focus-visible h2 { color: var(--gold); }
+  .mode:hover .soul, .mode:focus-visible .soul { color: var(--soul); }
+
+  /* ---------- matchup ---------- */
+  .round-name {
+    text-align: center;
+    font-family: "Press Start 2P", monospace;
+    font-size: 13px;
+    color: var(--cyan);
+    margin: 18px 0 16px;
+    letter-spacing: 1px;
+  }
+  .meter {
+    max-width: 520px; height: 14px; margin: -4px auto 20px;
+    border: 2px solid var(--fg); position: relative;
+  }
+  .meter i { position: absolute; inset: 0 auto 0 0; background: var(--cyan); }
+  .matchup {
+    display: grid;
+    grid-template-columns: 1fr auto 1fr;
+    gap: 18px;
+    align-items: stretch;
+  }
+  .vs {
+    align-self: center;
+    font-family: "Press Start 2P", monospace;
+    font-size: 18px;
+    color: var(--soul);
+  }
+  .card {
+    position: relative;
+    background: var(--panel);
+    border: 4px solid var(--fg);
+    padding: 22px 20px 20px;
+    display: flex; flex-direction: column; gap: 14px;
+    min-width: 0;
+    transition: transform .12s, border-color .12s;
+  }
+  .card.playing { border-color: var(--gold); }
+  .card .seed {
+    position: absolute; top: -14px; left: 14px;
+    background: var(--bg); padding: 0 8px;
+    font-family: "Press Start 2P", monospace; font-size: 11px; color: var(--dim);
+  }
+  .card h2 {
+    margin: 0;
+    font-family: "Press Start 2P", monospace;
+    font-size: clamp(13px, 2vw, 18px);
+    line-height: 1.5;
+    overflow-wrap: anywhere;
+    min-height: 3em;
+  }
+  .meta { color: var(--dim); font-size: 21px; }
+  .meta a { color: var(--dim); }
+  .meta a:hover { color: var(--cyan); }
+
+  .player { display: flex; align-items: center; gap: 12px; }
+  .play {
+    flex: none;
+    width: 52px; height: 52px;
+    border: 3px solid var(--fg);
+    background: transparent;
+    display: grid; place-items: center;
+    font-size: 22px;
+  }
+  .play:hover { color: var(--gold); border-color: var(--gold); }
+  .play.loading { animation: blink .6s steps(2) infinite; }
+  @keyframes blink { 50% { opacity: .3; } }
+  .bar { flex: 1; height: 14px; border: 2px solid var(--fg); position: relative; }
+  .bar i { position: absolute; inset: 0 auto 0 0; width: 0; background: var(--gold); }
+  .time { width: 64px; text-align: right; color: var(--dim); }
+
+  .pick {
+    margin-top: auto;
+    border: 3px solid var(--fg);
+    background: transparent;
+    padding: 12px;
+    font-family: "Press Start 2P", monospace;
+    font-size: 13px;
+    display: flex; align-items: center; justify-content: center; gap: 10px;
+  }
+  .pick .soul { color: transparent; }
+  .pick:hover, .pick:focus-visible { color: var(--gold); border-color: var(--gold); outline: none; }
+  .pick:hover .soul, .pick:focus-visible .soul { color: var(--soul); }
+  .key { color: var(--dim); font-size: 10px; }
+
+  .error { text-align: center; color: var(--soul); margin: 40px 16px; font-size: 24px; }
+
+  /* ---------- champion ---------- */
+  .champion { text-align: center; padding: 30px 0 10px; }
+  .champion .crown { font-size: 54px; }
+  .champion h2 {
+    font-family: "Press Start 2P", monospace;
+    font-size: clamp(18px, 4vw, 32px);
+    color: var(--gold);
+    margin: 18px 0 10px; line-height: 1.4;
+  }
+  .champion .card { max-width: 520px; margin: 20px auto 0; text-align: left; }
+  .champion .card h2 { display: none; }
+
+  /* ---------- ranking list ---------- */
+  .ranking { max-width: 720px; margin: 0 auto; }
+  .ranking h3 {
+    font-family: "Press Start 2P", monospace;
+    font-size: 13px; color: var(--cyan); text-align: center; margin: 34px 0 14px;
+  }
+  .ranking ol { list-style: none; margin: 0; padding: 0; border-top: 2px solid #222; }
+  .row {
+    display: flex; align-items: center; gap: 12px;
+    padding: 6px 4px; border-bottom: 2px solid #222;
+  }
+  .row.playing { color: var(--gold); }
+  .row .rank { width: 44px; flex: none; text-align: right; color: var(--dim); font-size: 24px; }
+  .row:nth-child(1) .rank, .row:nth-child(2) .rank, .row:nth-child(3) .rank { color: var(--gold); }
+  .row .info { flex: 1; min-width: 0; }
+  .row .t { white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+  .row .m { color: var(--dim); font-size: 18px; }
+  .row .play { width: 36px; height: 36px; font-size: 15px; border-width: 2px; }
+  .row .time { width: 46px; font-size: 18px; }
+  .row .bar { display: none; }
+  .ranking-actions { display: flex; gap: 10px; justify-content: center; margin-top: 18px; flex-wrap: wrap; }
+
+  /* ---------- bracket ---------- */
+  .bracket-wrap { margin-top: 40px; }
+  .bracket-wrap h3 {
+    font-family: "Press Start 2P", monospace;
+    font-size: 13px; color: var(--cyan); text-align: center; margin: 0 0 14px;
+  }
+  .bracket {
+    display: flex; gap: 14px;
+    overflow-x: auto;
+    padding-bottom: 12px;
+    border-top: 2px solid #222;
+    padding-top: 14px;
+  }
+  .col { flex: 0 0 200px; display: flex; flex-direction: column; }
+  .col h4 {
+    margin: 0 0 8px; font-weight: normal; color: var(--dim);
+    font-size: 18px; text-align: center;
+  }
+  .col .games { flex: 1; display: flex; flex-direction: column; justify-content: space-around; gap: 6px; }
+  .game { border: 2px solid #333; font-size: 18px; }
+  .game.current { border-color: var(--gold); }
+  .slot {
+    display: flex; gap: 6px; padding: 2px 6px;
+    white-space: nowrap; overflow: hidden; text-overflow: ellipsis;
+  }
+  .slot + .slot { border-top: 1px solid #333; }
+  .slot .s { color: var(--dim); width: 20px; flex: none; text-align: right; }
+  .slot .n { overflow: hidden; text-overflow: ellipsis; }
+  .slot.win { color: var(--gold); }
+  .slot.lose { color: #555; text-decoration: line-through; }
+  .slot.tbd { color: #444; }
+
+  footer { text-align: center; color: #555; font-size: 18px; padding: 30px 16px 40px; }
+  footer a { color: #777; }
+
+  @media (max-width: 720px) {
+    .matchup { grid-template-columns: 1fr; }
+    .vs { justify-self: center; }
+    .key { display: none; }
+    .modes { grid-template-columns: 1fr; }
+  }
+</style>
+</head>
+<body>
+<header>
+  <h1><span class="heart">♥</span> DELTARUNE SONG BRACKET <span class="heart">♥</span></h1>
+  <div class="status" id="status">Loading songs…</div>
+  <div class="toolbar" id="toolbar" hidden>
+    <button class="btn" id="menu">☰ Modes</button>
+    <button class="btn" id="undo" disabled>↶ Undo</button>
+    <button class="btn" id="reset">Start over</button>
+  </div>
+</header>
+
+<main>
+  <section id="stage"></section>
+  <section class="ranking" id="rankingWrap" hidden></section>
+  <section class="bracket-wrap" id="bracketWrap" hidden>
+    <h3>THE BRACKET</h3>
+    <div class="bracket" id="bracket"></div>
+  </section>
+</main>
+
+<footer>
+  Songs from the official DELTARUNE soundtracks by Toby Fox. Popularity is
+  <a href="https://www.last.fm/music/Toby+Fox/+tracks" target="_blank" rel="noopener">Last.fm</a> listener count.<br>
+  Clips are Apple Music previews. Get the full soundtracks on
+  <a href="https://music.apple.com/us/artist/toby-fox/1060915053" target="_blank" rel="noopener">Apple Music</a> or
+  <a href="https://tobyfox.bandcamp.com" target="_blank" rel="noopener">Bandcamp</a>!
+</footer>
+
+<script>
+const CLIP = 30;
+const CHAPTERS = ["Chapter 1", "Chapter 2", "Chapter 3", "Chapter 4", "Chapter 5"];
+
+let allSongs = [];
+let modes = [];       // [{ id, kind: "bracket" | "rank", title, blurb, songs }]
+let mode = null;      // the active mode
+let songs = [];       // the active mode's songs; ids are 1-based indexes into this
+
+const $ = id => document.getElementById(id);
+const esc = s => String(s).replace(/[&<>"]/g, c => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" }[c]));
+const fmt = sec => `${Math.floor(sec / 60)}:${String(Math.round(sec % 60)).padStart(2, "0")}`;
+
+// ---------- storage ----------
+function storeGet(key) {
+  try { return JSON.parse(localStorage.getItem(key)); } catch (e) { return null; }
+}
+function storeSet(key, value) {
+  try { localStorage.setItem(key, JSON.stringify(value)); } catch (e) {}
+}
+const songsSig = list => list.map(s => s.key + s.chapter).join("|");
+
+// ---------- modes ----------
+function buildModes() {
+  // Best-of bracket: top 10 per chapter by listeners. Last.fm merges
+  // same-named songs (You Can Always Come Home is in Ch1 and Ch2), so keep the first.
+  const seen = new Set();
+  const tiers = [];
+  for (const ch of CHAPTERS) {
+    const list = allSongs
+      .filter(s => s.chapter === ch && s.listeners > 0 && !seen.has(s.key))
+      .sort((a, b) => b.listeners - a.listeners)
+      .slice(0, 10);
+    list.forEach((s, i) => { seen.add(s.key); tiers.push({ ...s, chapterRank: i + 1 }); });
+  }
+  // Seed in tiers (every chapter's #1, then every #2, …) so chapters spread out.
+  tiers.sort((a, b) => a.chapterRank - b.chapterRank || b.listeners - a.listeners);
+
+  modes = [{
+    id: "best",
+    kind: "bracket",
+    title: "Best of DELTARUNE",
+    blurb: "Bracket of the 10 most popular songs from each chapter (50 songs). Pick favorites until one champion is left.",
+    songs: tiers,
+    storeKey: "deltarune-bracket-chapters-v1",
+  }];
+  for (const ch of CHAPTERS) {
+    const list = allSongs.filter(s => s.chapter === ch).sort((a, b) => a.track - b.track);
+    modes.push({
+      id: "rank-" + ch.replace(/\D/g, ""),
+      kind: "rank",
+      title: "Rank " + ch,
+      blurb: `Rank all ${list.length} songs from ${ch}, from your #1 to your last — one matchup at a time.`,
+      songs: list,
+      storeKey: "deltarune-rank-" + ch.replace(/\D/g, "") + "-v1",
+    });
+  }
+}
+
+function modeProgress(m) {
+  const saved = storeGet(m.storeKey);
+  if (!saved || saved.sig !== songsSig(m.songs)) return "";
+  if (m.kind === "bracket") {
+    const done = (saved.history || []).length;
+    return done ? (done >= 49 ? "✔ Champion crowned" : `In progress — ${done} of 49 matches`) : "";
+  }
+  const st = saved.state;
+  if (!st || st.comparisons === 0) return "";
+  return st.i >= st.order.length ? "✔ Ranking complete" : `In progress — ${st.ranked.length} of ${st.order.length} songs placed`;
+}
+
+function showMenu() {
+  stopAudio();
+  mode = null;
+  try { history.replaceState(null, "", location.pathname); } catch (e) {}
+  $("toolbar").hidden = true;
+  $("bracketWrap").hidden = true;
+  $("rankingWrap").hidden = true;
+  $("status").textContent = "Choose a mode";
+  $("stage").innerHTML = `
+    <div class="menu-title">SELECT A MODE</div>
+    <div class="modes">
+      ${modes.map((m, i) => `
+        <button class="mode${i === 0 ? " featured" : ""}" data-mode="${m.id}">
+          <h2><span class="soul">♥</span>${esc(m.title.toUpperCase())}</h2>
+          <p>${esc(m.blurb)}</p>
+          <p>${m.kind === "bracket" ? "49 matchups" : `About ${estimateComparisons(m.songs.length)} matchups at most`}</p>
+          <div class="progress-line">${esc(modeProgress(m))}</div>
+        </button>`).join("")}
+    </div>`;
+  $("stage").querySelectorAll(".mode").forEach(b => b.onclick = () => startMode(b.dataset.mode));
+}
+
+function startMode(id) {
+  mode = modes.find(m => m.id === id);
+  if (!mode) return showMenu();
+  try { history.replaceState(null, "", "#" + id); } catch (e) {}
+  songs = mode.songs;
+  $("toolbar").hidden = false;
+  $("bracketWrap").hidden = mode.kind !== "bracket";
+  $("rankingWrap").hidden = mode.kind !== "rank";
+  $("reset").textContent = mode.kind === "bracket" ? "Restart bracket" : "Restart ranking";
+  if (mode.kind === "bracket") Bracket.start(); else Sorter.start();
+  window.scrollTo({ top: 0 });
+}
+
+// ---------- audio ----------
+const audio = new Audio();
+audio.preload = "none";
+let playing = null; // { id, start, len, el }
+
+// Clips are Apple Music's 30-second previews (the whole song if it's shorter).
+const clipLen = song => Math.min(CLIP, Math.floor(song.duration));
+const clipStart = song => 0;
+const clipLabel = song => "0:" + String(clipLen(song)).padStart(2, "0");
+
+function stopAudio() {
+  audio.pause();
+  if (playing) {
+    const el = playing.el;
+    el.classList.remove("playing");
+    const btn = el.querySelector(".play");
+    btn.textContent = "▶";
+    btn.classList.remove("loading");
+    const bar = el.querySelector(".bar i");
+    if (bar) bar.style.width = "0";
+    el.querySelector(".time").textContent = clipLabel(songs[playing.id - 1]);
+  }
+  playing = null;
+}
+
+function togglePlay(id, el) {
+  if (playing && playing.id === id && playing.el === el) { stopAudio(); return; }
+  stopAudio();
+  const song = songs[id - 1];
+  const start = clipStart(song);
+  playing = { id, start, len: clipLen(song), el };
+  el.classList.add("playing");
+  const btn = el.querySelector(".play");
+  btn.textContent = "■";
+  btn.classList.add("loading");
+  audio.src = song.src;
+  audio.addEventListener("loadedmetadata", () => {
+    audio.currentTime = start;
+    audio.play().catch(() => stopAudio());
+  }, { once: true });
+  audio.load();
+}
+
+audio.addEventListener("playing", () => {
+  if (playing) playing.el.querySelector(".play").classList.remove("loading");
+});
+audio.addEventListener("timeupdate", () => {
+  if (!playing) return;
+  const t = audio.currentTime - playing.start;
+  if (t >= playing.len || audio.ended) { stopAudio(); return; }
+  const el = playing.el;
+  const bar = el.querySelector(".bar i");
+  if (bar) bar.style.width = Math.max(0, t / playing.len * 100) + "%";
+  el.querySelector(".time").textContent = "0:" + String(Math.ceil(playing.len - Math.max(0, t))).padStart(2, "0");
+});
+audio.addEventListener("ended", stopAudio);
+audio.addEventListener("error", () => {
+  if (playing) {
+    const el = playing.el;
+    stopAudio();
+    el.querySelector(".time").textContent = "error";
+  }
+});
+
+function wirePlayers(root) {
+  root.querySelectorAll("[data-id]").forEach(el => {
+    const btn = el.querySelector(".play");
+    if (btn) btn.onclick = () => togglePlay(+el.dataset.id, el);
+  });
+}
+
+// ---------- shared matchup UI ----------
+function cardHTML(id, side, label, extra) {
+  const s = songs[id - 1];
+  return `
+    <div class="card" data-id="${id}">
+      <span class="seed">${esc(label)}</span>
+      <h2>${esc(s.title)}</h2>
+      <div class="meta">${extra}<br>${esc(s.chapter)} · Track ${s.track} · ${fmt(s.duration)} ·
+        <a href="${esc(s.url)}" target="_blank" rel="noopener">apple music</a></div>
+      <div class="player">
+        <button class="play" aria-label="Play clip">▶</button>
+        <div class="bar"><i></i></div>
+        <span class="time">${clipLabel(s)}</span>
+      </div>
+      ${side ? `<button class="pick"><span class="soul">♥</span> PICK THIS ONE <span class="key">[${side}]</span></button>` : ""}
+    </div>`;
+}
+
+function renderMatchup(heading, meterPct, a, b, cardA, cardB, onPick) {
+  $("stage").innerHTML = `
+    <div class="round-name">${esc(heading)}</div>
+    ${meterPct == null ? "" : `<div class="meter"><i style="width:${meterPct}%"></i></div>`}
+    <div class="matchup">
+      ${cardA}
+      <div class="vs">VS</div>
+      ${cardB}
+    </div>`;
+  wirePlayers($("stage"));
+  $("stage").querySelectorAll(".pick").forEach(btn => {
+    btn.onclick = () => onPick(+btn.closest(".card").dataset.id);
+  });
+}
+
+function rowHTML(id, rank) {
+  const s = songs[id - 1];
+  return `
+    <li class="row" data-id="${id}">
+      <span class="rank">${rank}</span>
+      <button class="play" aria-label="Play clip">▶</button>
+      <div class="info">
+        <div class="t">${esc(s.title)}</div>
+        <div class="m">Track ${s.track} · ${fmt(s.duration)}</div>
+      </div>
+      <span class="time">${clipLabel(s)}</span>
+    </li>`;
+}
+
+// ---------- bracket mode ----------
+const Bracket = (() => {
+  const SIZE = 64;
+  const ROUND_NAMES = ["Round of 64", "Round of 32", "Sweet 16", "Elite 8", "Final Four", "Final"];
+  let firstRound = [], winners = [], hist = [];
+
+  function seedOrder(n) {
+    let order = [1, 2];
+    while (order.length < n) {
+      const m = order.length * 2 + 1;
+      order = order.flatMap(s => [s, m - s]);
+    }
+    return order;
+  }
+
+  function setup() {
+    const order = seedOrder(SIZE);
+    firstRound = [];
+    for (let i = 0; i < SIZE; i += 2) {
+      const a = order[i], b = order[i + 1];
+      firstRound.push([a <= songs.length ? a : null, b <= songs.length ? b : null]);
+    }
+    winners = ROUND_NAMES.map((_, r) => Array(SIZE >> (r + 1)).fill(null));
+    firstRound.forEach(([a, b], g) => { if (a == null || b == null) winners[0][g] = a ?? b; });
+    hist = [];
+  }
+
+  const entrants = (r, g) => r === 0 ? firstRound[g] : [winners[r - 1][g * 2], winners[r - 1][g * 2 + 1]];
+  const isBye = (r, g) => r === 0 && (firstRound[g][0] == null || firstRound[g][1] == null);
+
+  function nextGame() {
+    for (let r = 0; r < ROUND_NAMES.length; r++) {
+      for (let g = 0; g < winners[r].length; g++) {
+        if (winners[r][g] != null) continue;
+        const [a, b] = entrants(r, g);
+        if (a != null && b != null) return [r, g];
+      }
+    }
+    return null;
+  }
+
+  const totalGames = () => firstRound.filter(([a, b]) => a != null && b != null).length + (SIZE / 2 - 1);
+
+  function save() { storeSet(mode.storeKey, { sig: songsSig(songs), winners, history: hist }); }
+
+  function start() {
+    setup();
+    const saved = storeGet(mode.storeKey);
+    if (saved && saved.sig === songsSig(songs)) { winners = saved.winners; hist = saved.history || []; }
+    render();
+  }
+
+  function render() {
+    stopAudio();
+    const next = nextGame();
+    const total = totalGames();
+    $("undo").disabled = hist.length === 0;
+    const label = id => `SEED #${id}`;
+    const extra = id => `#${songs[id - 1].chapterRank} in ${esc(songs[id - 1].chapter)} · ${songs[id - 1].listeners.toLocaleString()} listeners`;
+
+    if (!next) {
+      const id = winners[ROUND_NAMES.length - 1][0];
+      $("status").innerHTML = `All <b>${total}</b> matches decided!`;
+      $("stage").innerHTML = `
+        <div class="champion">
+          <div class="crown">👑</div>
+          <div class="px" style="font-size:12px;color:var(--cyan)">YOUR CHAMPION</div>
+          <h2>${esc(songs[id - 1].title)}</h2>
+          ${cardHTML(id, null, label(id), extra(id))}
+        </div>`;
+      wirePlayers($("stage"));
+    } else {
+      const [r, g] = next;
+      const [a, b] = entrants(r, g);
+      $("status").innerHTML = `Match <b>${hist.length + 1}</b> of <b>${total}</b> — listen, then pick your favorite`;
+      renderMatchup(ROUND_NAMES[r].toUpperCase(), null, a, b,
+        cardHTML(a, "1", label(a), extra(a)), cardHTML(b, "2", label(b), extra(b)), pick);
+    }
+    renderBracket(next);
+  }
+
+  function renderBracket(current) {
+    $("bracket").innerHTML = ROUND_NAMES.map((name, r) => {
+      const games = winners[r].map((w, g) => {
+        if (isBye(r, g)) {
+          return `<div class="game"><div class="slot"><span class="s">${w}</span><span class="n">${esc(songs[w - 1].title)}</span></div><div class="slot tbd"><span class="s"></span><span class="n">bye</span></div></div>`;
+        }
+        const [a, b] = entrants(r, g);
+        const slot = s => {
+          if (s == null) return `<div class="slot tbd"><span class="s"></span><span class="n">—</span></div>`;
+          const cls = w == null ? "" : (w === s ? "win" : "lose");
+          return `<div class="slot ${cls}"><span class="s">${s}</span><span class="n" title="${esc(songs[s - 1].title)}">${esc(songs[s - 1].title)}</span></div>`;
+        };
+        const isCur = current && current[0] === r && current[1] === g;
+        return `<div class="game${isCur ? " current" : ""}">${slot(a)}${slot(b)}</div>`;
+      }).join("");
+      return `<div class="col"><h4>${name}</h4><div class="games">${games}</div></div>`;
+    }).join("");
+    const cur = $("bracket").querySelector(".game.current");
+    if (cur) {
+      const box = $("bracket");
+      box.scrollLeft = Math.max(0, cur.closest(".col").offsetLeft - box.offsetLeft - 20);
+    }
+  }
+
+  function pick(id) {
+    const next = nextGame();
+    if (!next) return;
+    winners[next[0]][next[1]] = id;
+    hist.push(next);
+    save(); render();
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  }
+
+  function undo() {
+    const last = hist.pop();
+    if (!last) return;
+    winners[last[0]][last[1]] = null;
+    save(); render();
+  }
+
+  function reset() { setup(); save(); render(); }
+
+  return { start, undo, reset };
+})();
+
+// ---------- ranking mode (binary insertion sort) ----------
+// Each new song is slotted into your ranking by comparing it against the
+// middle of the remaining range, so a song takes only ~log2(n) matchups.
+function estimateComparisons(n) {
+  let total = 0;
+  for (let k = 1; k < n; k++) total += Math.ceil(Math.log2(k + 1));
+  return total;
+}
+
+const Sorter = (() => {
+  let st = null;   // { order, ranked, i, lo, hi, comparisons }
+  let hist = [];   // snapshots for undo
+
+  function fresh() {
+    const order = songs.map((_, i) => i + 1);
+    for (let i = order.length - 1; i > 0; i--) {  // shuffle so track order doesn't bias it
+      const j = Math.floor(Math.random() * (i + 1));
+      [order[i], order[j]] = [order[j], order[i]];
+    }
+    return { order, ranked: [order[0]], i: 1, lo: 0, hi: 1, comparisons: 0 };
+  }
+
+  const done = () => st.i >= st.order.length;
+  function save() { storeSet(mode.storeKey, { sig: songsSig(songs), state: st, history: hist }); }
+
+  function start() {
+    const saved = storeGet(mode.storeKey);
+    if (saved && saved.sig === songsSig(songs) && saved.state) { st = saved.state; hist = saved.history || []; }
+    else { st = fresh(); hist = []; }
+    render();
+  }
+
+  function render() {
+    stopAudio();
+    $("undo").disabled = hist.length === 0;
+    const n = st.order.length;
+
+    if (done()) {
+      $("status").innerHTML = `Your ${esc(songs[0].chapter)} ranking is done — <b>${n}</b> songs, <b>${st.comparisons}</b> matchups`;
+      const top = st.ranked[0];
+      $("stage").innerHTML = `
+        <div class="champion">
+          <div class="crown">👑</div>
+          <div class="px" style="font-size:12px;color:var(--cyan)">YOUR #1 ${esc(songs[0].chapter.toUpperCase())} SONG</div>
+          <h2>${esc(songs[top - 1].title)}</h2>
+        </div>`;
+      renderRanking("YOUR FULL RANKING", true);
+      return;
+    }
+
+    // Upper-bound estimate: matchups done + worst case for what's left.
+    let remaining = Math.ceil(Math.log2(st.hi - st.lo + 1));
+    for (let k = st.ranked.length + 1; k < n; k++) remaining += Math.ceil(Math.log2(k + 1));
+    const pct = Math.round(st.comparisons / (st.comparisons + remaining) * 100);
+
+    const cand = st.order[st.i];
+    const mid = (st.lo + st.hi) >> 1;
+    const vs = st.ranked[mid];
+    $("status").innerHTML = `Matchup <b>${st.comparisons + 1}</b> · about <b>${pct}%</b> done · ${st.ranked.length} of ${n} songs placed`;
+    const extra = id => `${songs[id - 1].listeners ? songs[id - 1].listeners.toLocaleString() + " listeners" : "&nbsp;"}`;
+    renderMatchup(`RANK ${songs[0].chapter.toUpperCase()}`, pct, cand, vs,
+      cardHTML(cand, "1", "NEW SONG", extra(cand)),
+      cardHTML(vs, "2", `YOUR #${mid + 1} SO FAR`, extra(vs)),
+      pick);
+    renderRanking(`YOUR RANKING SO FAR (${st.ranked.length} of ${n})`, false);
+  }
+
+  function renderRanking(heading, final) {
+    $("rankingWrap").innerHTML = `
+      <h3>${esc(heading)}</h3>
+      <ol>${st.ranked.map((id, i) => rowHTML(id, i + 1)).join("")}</ol>
+      ${final ? `<div class="ranking-actions"><button class="btn" id="copyRank">Copy ranking as text</button></div>` : ""}`;
+    wirePlayers($("rankingWrap"));
+    const copy = $("copyRank");
+    if (copy) copy.onclick = () => {
+      const text = `My DELTARUNE ${songs[0].chapter} song ranking:\n` +
+        st.ranked.map((id, i) => `${i + 1}. ${songs[id - 1].title}`).join("\n");
+      navigator.clipboard.writeText(text).then(
+        () => { copy.textContent = "Copied!"; },
+        () => { copy.textContent = "Couldn't copy"; });
+    };
+  }
+
+  function pick(id) {
+    if (done()) return;
+    hist.push(JSON.stringify(st));
+    if (hist.length > 400) hist.shift();
+    const cand = st.order[st.i];
+    const mid = (st.lo + st.hi) >> 1;
+    if (id === cand) st.hi = mid; else st.lo = mid + 1;
+    st.comparisons++;
+    if (st.lo >= st.hi) {
+      st.ranked.splice(st.lo, 0, cand);
+      st.i++;
+      st.lo = 0;
+      st.hi = st.ranked.length;
+    }
+    save(); render();
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  }
+
+  function undo() {
+    const prev = hist.pop();
+    if (!prev) return;
+    st = JSON.parse(prev);
+    save(); render();
+  }
+
+  function reset() { st = fresh(); hist = []; save(); render(); }
+
+  return { start, undo, reset };
+})();
+
+// ---------- controls ----------
+const active = () => mode && (mode.kind === "bracket" ? Bracket : Sorter);
+$("menu").onclick = showMenu;
+$("undo").onclick = () => active() && active().undo();
+$("reset").onclick = () => {
+  if (!active()) return;
+  if (!confirm(mode.kind === "bracket" ? "Restart the whole bracket?" : "Restart this ranking from scratch?")) return;
+  active().reset();
+};
+
+document.addEventListener("keydown", e => {
+  if (!mode) return;
+  const cards = $("stage").querySelectorAll(".matchup .card");
+  if ((e.metaKey || e.ctrlKey) && e.key === "z") { e.preventDefault(); active().undo(); return; }
+  if (!cards.length || e.metaKey || e.ctrlKey || e.altKey) return;
+  if (e.key === "1" || e.key === "2") cards[+e.key - 1].querySelector(".pick").click();
+  if (e.key.toLowerCase() === "q") cards[0].querySelector(".play").click();
+  if (e.key.toLowerCase() === "w") cards[1].querySelector(".play").click();
+});
+
+// ---------- boot ----------
+if (location.protocol === "file:") {
+  $("status").textContent = "";
+  $("stage").innerHTML = `<div class="error">* This page can't load songs when it's opened as a file.<br>
+    * Open it from the GitHub Pages website instead.</div>`;
+} else fetch("songs.json", { cache: "no-store" })
+  .then(r => { if (!r.ok) throw new Error(r.status); return r.json(); })
+  .then(data => {
+    allSongs = data.songs;
+    buildModes();
+    const fromHash = location.hash.slice(1);
+    if (modes.some(m => m.id === fromHash)) startMode(fromHash); else showMenu();
+  })
+  .catch(() => {
+    $("status").textContent = "";
+    $("stage").innerHTML = `<div class="error">* Couldn't load the songs.<br>* Try reloading the page in a minute.</div>`;
+  });
+</script>
+</body>
+</html>
