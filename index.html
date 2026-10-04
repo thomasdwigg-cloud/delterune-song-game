@@ -190,28 +190,6 @@
   .champion .card { max-width: 520px; margin: 20px auto 0; text-align: left; }
   .champion .card h2 { display: none; }
 
-  /* ---------- ranking list ---------- */
-  .ranking { max-width: 720px; margin: 0 auto; }
-  .ranking h3 {
-    font-family: "Press Start 2P", monospace;
-    font-size: 13px; color: var(--cyan); text-align: center; margin: 34px 0 14px;
-  }
-  .ranking ol { list-style: none; margin: 0; padding: 0; border-top: 2px solid #222; }
-  .row {
-    display: flex; align-items: center; gap: 12px;
-    padding: 6px 4px; border-bottom: 2px solid #222;
-  }
-  .row.playing { color: var(--gold); }
-  .row .rank { width: 44px; flex: none; text-align: right; color: var(--dim); font-size: 24px; }
-  .row:nth-child(1) .rank, .row:nth-child(2) .rank, .row:nth-child(3) .rank { color: var(--gold); }
-  .row .info { flex: 1; min-width: 0; }
-  .row .t { white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
-  .row .m { color: var(--dim); font-size: 18px; }
-  .row .play { width: 36px; height: 36px; font-size: 15px; border-width: 2px; }
-  .row .time { width: 46px; font-size: 18px; }
-  .row .bar { display: none; }
-  .ranking-actions { display: flex; gap: 10px; justify-content: center; margin-top: 18px; flex-wrap: wrap; }
-
   /* ---------- bracket ---------- */
   .bracket-wrap { margin-top: 40px; }
   .bracket-wrap h3 {
@@ -268,7 +246,6 @@
 
 <main>
   <section id="stage"></section>
-  <section class="ranking" id="rankingWrap" hidden></section>
   <section class="bracket-wrap" id="bracketWrap" hidden>
     <h3>THE BRACKET</h3>
     <div class="bracket" id="bracket"></div>
@@ -288,7 +265,7 @@ const CLIP = 30;
 const CHAPTERS = ["Chapter 1", "Chapter 2", "Chapter 3", "Chapter 4", "Chapter 5"];
 
 let allSongs = [];
-let modes = [];       // [{ id, kind: "bracket" | "rank", title, blurb, songs }]
+let modes = [];       // [{ id, title, blurb, songs, storeKey }]
 let mode = null;      // the active mode
 let songs = [];       // the active mode's songs; ids are 1-based indexes into this
 
@@ -323,21 +300,24 @@ function buildModes() {
 
   modes = [{
     id: "best",
-    kind: "bracket",
     title: "Best of DELTARUNE",
     blurb: "Bracket of the 10 most popular songs from each chapter (50 songs). Pick favorites until one champion is left.",
     songs: tiers,
     storeKey: "deltarune-bracket-chapters-v1",
   }];
   for (const ch of CHAPTERS) {
-    const list = allSongs.filter(s => s.chapter === ch).sort((a, b) => a.track - b.track);
+    // Every song in the chapter, seeded by popularity (most listeners = #1).
+    const list = allSongs
+      .filter(s => s.chapter === ch)
+      .sort((a, b) => b.listeners - a.listeners || a.track - b.track)
+      .map((s, i) => ({ ...s, chapterRank: i + 1 }));
+    const n = ch.replace(/\D/g, "");
     modes.push({
-      id: "rank-" + ch.replace(/\D/g, ""),
-      kind: "rank",
-      title: "Rank " + ch,
-      blurb: `Rank all ${list.length} songs from ${ch}, from your #1 to your last — one matchup at a time.`,
+      id: "chapter-" + n,
+      title: ch + " Bracket",
+      blurb: `Bracket of all ${list.length} songs from ${ch}, seeded by popularity. Pick favorites until one champion is left.`,
       songs: list,
-      storeKey: "deltarune-rank-" + ch.replace(/\D/g, "") + "-v1",
+      storeKey: "deltarune-chapter-bracket-" + n + "-v1",
     });
   }
 }
@@ -345,13 +325,9 @@ function buildModes() {
 function modeProgress(m) {
   const saved = storeGet(m.storeKey);
   if (!saved || saved.sig !== songsSig(m.songs)) return "";
-  if (m.kind === "bracket") {
-    const done = (saved.history || []).length;
-    return done ? (done >= 49 ? "✔ Champion crowned" : `In progress — ${done} of 49 matches`) : "";
-  }
-  const st = saved.state;
-  if (!st || st.comparisons === 0) return "";
-  return st.i >= st.order.length ? "✔ Ranking complete" : `In progress — ${st.ranked.length} of ${st.order.length} songs placed`;
+  const done = (saved.history || []).length;
+  const total = m.songs.length - 1;
+  return done ? (done >= total ? "✔ Champion crowned" : `In progress — ${done} of ${total} matches`) : "";
 }
 
 function showMenu() {
@@ -360,7 +336,6 @@ function showMenu() {
   try { history.replaceState(null, "", location.pathname); } catch (e) {}
   $("toolbar").hidden = true;
   $("bracketWrap").hidden = true;
-  $("rankingWrap").hidden = true;
   $("status").textContent = "Choose a mode";
   $("stage").innerHTML = `
     <div class="menu-title">SELECT A MODE</div>
@@ -369,7 +344,7 @@ function showMenu() {
         <button class="mode${i === 0 ? " featured" : ""}" data-mode="${m.id}">
           <h2><span class="soul">♥</span>${esc(m.title.toUpperCase())}</h2>
           <p>${esc(m.blurb)}</p>
-          <p>${m.kind === "bracket" ? "49 matchups" : `About ${estimateComparisons(m.songs.length)} matchups at most`}</p>
+          <p>${m.songs.length - 1} matchups</p>
           <div class="progress-line">${esc(modeProgress(m))}</div>
         </button>`).join("")}
     </div>`;
@@ -382,10 +357,8 @@ function startMode(id) {
   try { history.replaceState(null, "", "#" + id); } catch (e) {}
   songs = mode.songs;
   $("toolbar").hidden = false;
-  $("bracketWrap").hidden = mode.kind !== "bracket";
-  $("rankingWrap").hidden = mode.kind !== "rank";
-  $("reset").textContent = mode.kind === "bracket" ? "Restart bracket" : "Restart ranking";
-  if (mode.kind === "bracket") Bracket.start(); else Sorter.start();
+  $("bracketWrap").hidden = false;
+  Bracket.start();
   window.scrollTo({ top: 0 });
 }
 
@@ -493,25 +466,13 @@ function renderMatchup(heading, meterPct, a, b, cardA, cardB, onPick) {
   });
 }
 
-function rowHTML(id, rank) {
-  const s = songs[id - 1];
-  return `
-    <li class="row" data-id="${id}">
-      <span class="rank">${rank}</span>
-      <button class="play" aria-label="Play clip">▶</button>
-      <div class="info">
-        <div class="t">${esc(s.title)}</div>
-        <div class="m">Track ${s.track} · ${fmt(s.duration)}</div>
-      </div>
-      <span class="time">${clipLabel(s)}</span>
-    </li>`;
-}
-
 // ---------- bracket mode ----------
 const Bracket = (() => {
-  const SIZE = 64;
-  const ROUND_NAMES = ["Round of 64", "Round of 32", "Sweet 16", "Elite 8", "Final Four", "Final"];
+  let SIZE = 64, ROUND_NAMES = [];
   let firstRound = [], winners = [], hist = [];
+
+  // Round name from how many songs are still in it.
+  const roundName = n => ({ 2: "Final", 4: "Final Four", 8: "Elite 8", 16: "Sweet 16" })[n] || `Round of ${n}`;
 
   function seedOrder(n) {
     let order = [1, 2];
@@ -523,6 +484,10 @@ const Bracket = (() => {
   }
 
   function setup() {
+    SIZE = 2;
+    while (SIZE < songs.length) SIZE *= 2;
+    ROUND_NAMES = [];
+    for (let n = SIZE; n >= 2; n /= 2) ROUND_NAMES.push(roundName(n));
     const order = seedOrder(SIZE);
     firstRound = [];
     for (let i = 0; i < SIZE; i += 2) {
@@ -565,7 +530,11 @@ const Bracket = (() => {
     const total = totalGames();
     $("undo").disabled = hist.length === 0;
     const label = id => `SEED #${id}`;
-    const extra = id => `#${songs[id - 1].chapterRank} in ${esc(songs[id - 1].chapter)} · ${songs[id - 1].listeners.toLocaleString()} listeners`;
+    const extra = id => {
+      const s = songs[id - 1];
+      const pop = s.listeners ? `${s.listeners.toLocaleString()} listeners` : "";
+      return mode.id === "best" ? `#${s.chapterRank} in ${esc(s.chapter)} · ${pop}` : (pop || "&nbsp;");
+    };
 
     if (!next) {
       const id = winners[ROUND_NAMES.length - 1][0];
@@ -633,133 +602,18 @@ const Bracket = (() => {
   return { start, undo, reset };
 })();
 
-// ---------- ranking mode (binary insertion sort) ----------
-// Each new song is slotted into your ranking by comparing it against the
-// middle of the remaining range, so a song takes only ~log2(n) matchups.
-function estimateComparisons(n) {
-  let total = 0;
-  for (let k = 1; k < n; k++) total += Math.ceil(Math.log2(k + 1));
-  return total;
-}
-
-const Sorter = (() => {
-  let st = null;   // { order, ranked, i, lo, hi, comparisons }
-  let hist = [];   // snapshots for undo
-
-  function fresh() {
-    const order = songs.map((_, i) => i + 1);
-    for (let i = order.length - 1; i > 0; i--) {  // shuffle so track order doesn't bias it
-      const j = Math.floor(Math.random() * (i + 1));
-      [order[i], order[j]] = [order[j], order[i]];
-    }
-    return { order, ranked: [order[0]], i: 1, lo: 0, hi: 1, comparisons: 0 };
-  }
-
-  const done = () => st.i >= st.order.length;
-  function save() { storeSet(mode.storeKey, { sig: songsSig(songs), state: st, history: hist }); }
-
-  function start() {
-    const saved = storeGet(mode.storeKey);
-    if (saved && saved.sig === songsSig(songs) && saved.state) { st = saved.state; hist = saved.history || []; }
-    else { st = fresh(); hist = []; }
-    render();
-  }
-
-  function render() {
-    stopAudio();
-    $("undo").disabled = hist.length === 0;
-    const n = st.order.length;
-
-    if (done()) {
-      $("status").innerHTML = `Your ${esc(songs[0].chapter)} ranking is done — <b>${n}</b> songs, <b>${st.comparisons}</b> matchups`;
-      const top = st.ranked[0];
-      $("stage").innerHTML = `
-        <div class="champion">
-          <div class="crown">👑</div>
-          <div class="px" style="font-size:12px;color:var(--cyan)">YOUR #1 ${esc(songs[0].chapter.toUpperCase())} SONG</div>
-          <h2>${esc(songs[top - 1].title)}</h2>
-        </div>`;
-      renderRanking("YOUR FULL RANKING", true);
-      return;
-    }
-
-    // Upper-bound estimate: matchups done + worst case for what's left.
-    let remaining = Math.ceil(Math.log2(st.hi - st.lo + 1));
-    for (let k = st.ranked.length + 1; k < n; k++) remaining += Math.ceil(Math.log2(k + 1));
-    const pct = Math.round(st.comparisons / (st.comparisons + remaining) * 100);
-
-    const cand = st.order[st.i];
-    const mid = (st.lo + st.hi) >> 1;
-    const vs = st.ranked[mid];
-    $("status").innerHTML = `Matchup <b>${st.comparisons + 1}</b> · about <b>${pct}%</b> done · ${st.ranked.length} of ${n} songs placed`;
-    const extra = id => `${songs[id - 1].listeners ? songs[id - 1].listeners.toLocaleString() + " listeners" : "&nbsp;"}`;
-    renderMatchup(`RANK ${songs[0].chapter.toUpperCase()}`, pct, cand, vs,
-      cardHTML(cand, "1", "NEW SONG", extra(cand)),
-      cardHTML(vs, "2", `YOUR #${mid + 1} SO FAR`, extra(vs)),
-      pick);
-    renderRanking(`YOUR RANKING SO FAR (${st.ranked.length} of ${n})`, false);
-  }
-
-  function renderRanking(heading, final) {
-    $("rankingWrap").innerHTML = `
-      <h3>${esc(heading)}</h3>
-      <ol>${st.ranked.map((id, i) => rowHTML(id, i + 1)).join("")}</ol>
-      ${final ? `<div class="ranking-actions"><button class="btn" id="copyRank">Copy ranking as text</button></div>` : ""}`;
-    wirePlayers($("rankingWrap"));
-    const copy = $("copyRank");
-    if (copy) copy.onclick = () => {
-      const text = `My DELTARUNE ${songs[0].chapter} song ranking:\n` +
-        st.ranked.map((id, i) => `${i + 1}. ${songs[id - 1].title}`).join("\n");
-      navigator.clipboard.writeText(text).then(
-        () => { copy.textContent = "Copied!"; },
-        () => { copy.textContent = "Couldn't copy"; });
-    };
-  }
-
-  function pick(id) {
-    if (done()) return;
-    hist.push(JSON.stringify(st));
-    if (hist.length > 400) hist.shift();
-    const cand = st.order[st.i];
-    const mid = (st.lo + st.hi) >> 1;
-    if (id === cand) st.hi = mid; else st.lo = mid + 1;
-    st.comparisons++;
-    if (st.lo >= st.hi) {
-      st.ranked.splice(st.lo, 0, cand);
-      st.i++;
-      st.lo = 0;
-      st.hi = st.ranked.length;
-    }
-    save(); render();
-    window.scrollTo({ top: 0, behavior: "smooth" });
-  }
-
-  function undo() {
-    const prev = hist.pop();
-    if (!prev) return;
-    st = JSON.parse(prev);
-    save(); render();
-  }
-
-  function reset() { st = fresh(); hist = []; save(); render(); }
-
-  return { start, undo, reset };
-})();
-
 // ---------- controls ----------
-const active = () => mode && (mode.kind === "bracket" ? Bracket : Sorter);
 $("menu").onclick = showMenu;
-$("undo").onclick = () => active() && active().undo();
+$("undo").onclick = () => mode && Bracket.undo();
 $("reset").onclick = () => {
-  if (!active()) return;
-  if (!confirm(mode.kind === "bracket" ? "Restart the whole bracket?" : "Restart this ranking from scratch?")) return;
-  active().reset();
+  if (!mode || !confirm("Restart the whole bracket?")) return;
+  Bracket.reset();
 };
 
 document.addEventListener("keydown", e => {
   if (!mode) return;
   const cards = $("stage").querySelectorAll(".matchup .card");
-  if ((e.metaKey || e.ctrlKey) && e.key === "z") { e.preventDefault(); active().undo(); return; }
+  if ((e.metaKey || e.ctrlKey) && e.key === "z") { e.preventDefault(); Bracket.undo(); return; }
   if (!cards.length || e.metaKey || e.ctrlKey || e.altKey) return;
   if (e.key === "1" || e.key === "2") cards[+e.key - 1].querySelector(".pick").click();
   if (e.key.toLowerCase() === "q") cards[0].querySelector(".play").click();
